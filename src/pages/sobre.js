@@ -11,7 +11,6 @@ const Sobre = () => {
         <meta property="og:title" content="Quem Somos | Raafer" />
         <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
       </Helmet>
-      
       <HeroComponent/>
     </>
   );

@@ -33,7 +33,9 @@ const BaseLink = styled.li`
     }
 `;
 
-export const NavLink = styled(BaseLink)``;
+export const NavLink = styled(BaseLink)`
+    transition: none;
+`;
 
 export const Link = styled(BaseLink)`
     border-radius: 0 10px;
@@ -44,9 +46,10 @@ export const Link = styled(BaseLink)`
     padding-inline: auto;
     text-align: center;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
     
     &:hover {
-        color: ${({ theme }) => theme.COLORS.BROWN || "#8B4513"};
-        background-color: ${({ theme }) => theme.COLORS.WHITE || "#fff"};
+        color: ${({ theme }) => theme.COLORS.BROWN};
+        background-color: ${({ theme }) => theme.COLORS.WHITE};
     }
 `;
