@@ -25,6 +25,7 @@ body{
 
 body, input, button, textarea {
     outline: none;
+    font-family: "Figtree", sans-serif;
 }
 
 a {

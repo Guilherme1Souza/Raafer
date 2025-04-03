@@ -5,12 +5,10 @@ export const NavContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: relative;
 `;
 
 export const Logo = styled.div`
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: ${({ theme }) => theme.COLORS.DARK_GREY || "#333"};
 `;
 
 export const NavLinks = styled.ul`
@@ -18,6 +16,20 @@ export const NavLinks = styled.ul`
     font-weight: 400;
     gap: 48px;
     padding-right: 74px;
+    transition: 0.5s ease-in-out;
+
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+        display: ${({ open }) => (open ? "flex" : "none")};
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 15px;
+        background-color: ${({ theme }) => theme.COLORS.GREEN};
+        width: 100%;
+        text-align: center;
+        padding: 2.5rem 0;
+        border-radius: 10px;
+    }
 `;
 
 const BaseLink = styled.li`
@@ -30,6 +42,14 @@ const BaseLink = styled.li`
     
     &:hover {
         color: ${({ theme }) => theme.COLORS.GREEN || "#008000"};
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.tablet}){
+        margin-right: 0px;
+
+        &:hover {
+        color: ${({ theme }) => theme.COLORS.BROWN};
+    }
     }
 `;
 
@@ -51,5 +71,21 @@ export const Link = styled(BaseLink)`
     &:hover {
         color: ${({ theme }) => theme.COLORS.BROWN};
         background-color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+        justify-content: center;
+        margin: 0 auto;
+    }
+`;
+
+export const MenuIcon = styled.div`
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+        display: block;
     }
 `;
