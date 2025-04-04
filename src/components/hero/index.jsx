@@ -13,7 +13,7 @@ export function HeroComponent() {
       <Subtext>
         Uma vida mais saudável começa com escolhas inteligentes.
         Aposte em produtos frescos, ricos em nutrientes e sem conservantes
-        para garantir bem-estar e vitalidade todos os dias.
+        para garantir bem-estar e vitalidade todos os dias. Lorem ipsum dolor sit amet consectetur adipisicing elilam.
       </Subtext>
       <Button>Conheça nossos clientes</Button>
       </Text>

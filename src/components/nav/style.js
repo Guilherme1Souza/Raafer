@@ -6,6 +6,10 @@ export const NavContainer = styled.nav`
     align-items: center;
     padding: 1rem;
     position: relative;
+
+    @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) { 
+        padding-left: 20px;
+     }
 `;
 
 export const Logo = styled.div`
@@ -18,6 +22,16 @@ export const NavLinks = styled.ul`
     padding-right: 74px;
     transition: 0.5s ease-in-out;
 
+    @media (max-width: ${({ theme }) => theme.bp.desktop}) {
+        padding: 20px;
+        text-align: right;
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) {
+        padding: 20px;
+        text-align: right;
+    }
+
     @media (max-width: ${({ theme }) => theme.bp.tablet}) {
         display: ${({ open }) => (open ? "flex" : "none")};
         flex-direction: column;
@@ -29,6 +43,7 @@ export const NavLinks = styled.ul`
         text-align: center;
         padding: 2.5rem 0;
         border-radius: 10px;
+       
     }
 `;
 
@@ -46,6 +61,7 @@ const BaseLink = styled.li`
 
     @media (max-width: ${({ theme }) => theme.bp.tablet}){
         margin-right: 0px;
+        font-size: 28px;
 
         &:hover {
         color: ${({ theme }) => theme.COLORS.BROWN};
@@ -76,6 +92,9 @@ export const Link = styled(BaseLink)`
     @media (max-width: ${({ theme }) => theme.bp.tablet}) {
         justify-content: center;
         margin: 0 auto;
+        width: 405px;
+        height: 34px;
+        padding-top: 1px;
     }
 `;
 

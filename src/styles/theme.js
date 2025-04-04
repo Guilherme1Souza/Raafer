@@ -17,7 +17,8 @@ const theme = {
     smallDesktop: "970px",
     desktop: "1025px",
     bigDesktop: "1200px",
-    veryBigDesktop: "1600px",
+    veryBigDesktop: "1440px",
+    hugeDesktop: "1600px",
   },
 };
 
