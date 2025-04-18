@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Text, Subtext, BoxHero, BackgroundCasal, Button } from './style';
-import { Nav } from '../nav';
+import { Container, BoxHero, Text, Subtext, Background, Button } from './style';
+import { Nav } from '../nav/index.jsx';
 
 export function HeroComponent() {
   return (
@@ -8,16 +8,16 @@ export function HeroComponent() {
       <Nav />
       <BoxHero>
       <Text>
-        Do campo para a sua mesa, com qualidade
-        e frescor incomparáveis.
+        <h1>Do campo para a sua mesa, com qualidade
+        e frescor incomparáveis.</h1>
       <Subtext>
         Uma vida mais saudável começa com escolhas inteligentes.
         Aposte em produtos frescos, ricos em nutrientes e sem conservantes
-        para garantir bem-estar e vitalidade todos os dias. Lorem ipsum dolor sit amet consectetur adipisicing elilam.
+        para garantir bem-estar e vitalidade todos os dias.
       </Subtext>
       <Button>Conheça nossos clientes</Button>
       </Text>
-      <BackgroundCasal />
+      <Background />
       </BoxHero>
     </Container>
   );

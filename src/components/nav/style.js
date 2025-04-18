@@ -9,6 +9,7 @@ export const NavContainer = styled.nav`
 
     @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) { 
         padding-left: 20px;
+        padding-top: 2.0rem;
      }
 `;
 
@@ -18,12 +19,12 @@ export const Logo = styled.div`
 export const NavLinks = styled.ul`
     display: flex;
     font-weight: 400;
-    gap: 48px;
+    gap: clamp(2.4rem, 4vw, 4.8rem);
     padding-right: 74px;
     transition: 0.5s ease-in-out;
 
     @media (max-width: ${({ theme }) => theme.bp.desktop}) {
-        padding: 20px;
+        padding-left: 40px;
         text-align: right;
     }
 
@@ -37,18 +38,20 @@ export const NavLinks = styled.ul`
         flex-direction: column;
         position: absolute;
         top: 100px;
-        right: 15px;
         background-color: ${({ theme }) => theme.COLORS.GREEN};
         width: 100%;
         text-align: center;
         padding: 2.5rem 0;
-        border-radius: 10px;
-       
+        border-radius: 10px;  
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+        right: 5px;  
     }
 `;
 
 const BaseLink = styled.li`
-    font-size: 18px;
+    font-size: 2.0rem;
     color: ${({ theme }) => theme.COLORS.WHITE};
     padding-top: 10px;
     transition: color 0.3s ease-in-out;
@@ -61,7 +64,6 @@ const BaseLink = styled.li`
 
     @media (max-width: ${({ theme }) => theme.bp.tablet}){
         margin-right: 0px;
-        font-size: 28px;
 
         &:hover {
         color: ${({ theme }) => theme.COLORS.BROWN};
@@ -95,6 +97,14 @@ export const Link = styled(BaseLink)`
         width: 405px;
         height: 34px;
         padding-top: 1px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        padding: 1rem;
     }
 `;
 

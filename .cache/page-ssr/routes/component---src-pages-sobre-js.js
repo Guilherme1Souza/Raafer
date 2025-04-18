@@ -49,7 +49,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HeroComponent() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Container, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_nav__WEBPACK_IMPORTED_MODULE_2__.Nav, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.BoxHero, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Text, null, "Do campo para a sua mesa, com qualidade e frescor incompar\xE1veis.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Subtext, null, "Uma vida mais saud\xE1vel come\xE7a com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Button, null, "Conhe\xE7a nossos clientes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.BackgroundCasal, null)));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Container, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_nav__WEBPACK_IMPORTED_MODULE_2__.Nav, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.BoxHero, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Text, null, "Do campo para a sua mesa, com qualidade e frescor incompar\xE1veis.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Subtext, null, "Uma vida mais saud\xE1vel come\xE7a com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias. Lorem ipsum dolor sit amet consectetur adipisicing elilam."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.Button, null, "Conhe\xE7a nossos clientes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style__WEBPACK_IMPORTED_MODULE_1__.BackgroundCasal, null)));
 }
 
 /***/ }),
@@ -77,44 +77,76 @@ __webpack_require__.r(__webpack_exports__);
 
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "style__Container"
-})(["background:url(", ") center/cover no-repeat;max-width:100%;height:646px;padding-left:94px;@media (max-width:", "){padding-left:28px;height:auto;max-width:100%;background-size:cover;}@media (max-width:", "){padding-left:28px;height:auto;max-width:100%;background-size:cover;}"], _images_hero_png__WEBPACK_IMPORTED_MODULE_0__["default"], ({
+})(["background-color:", ";max-width:100%;height:646px;padding-left:94px;@media (max-width:", "){padding-left:28px;height:auto;max-width:100%;background-size:cover;}@media (max-width:", "){padding-left:28px;height:auto;max-width:100%;background-size:cover;}@media (max-width:", "){padding-left:28px;height:auto;max-width:100%;background-size:cover;}"], ({
+  theme
+}) => theme.COLORS.BROWN, ({
+  theme
+}) => theme.bp.smallDesktop, ({
   theme
 }) => theme.bp.tablet, ({
   theme
 }) => theme.bp.mobile);
 const BoxHero = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "style__BoxHero"
-})(["display:flex;@media (max-width:", "){flex-direction:column;max-width:100%;margin-top:50px;}@media (max-width:", "){flex-direction:column;max-width:100%;margin-top:100px;}"], ({
+})(["display:flex;@media (max-width:", "){max-width:100%;padding-left:0;}@media (max-width:", "){flex-direction:column;max-width:100%;}@media (max-width:", "){flex-direction:column;max-width:100%;}"], ({
+  theme
+}) => theme.bp.smallDesktop, ({
   theme
 }) => theme.bp.tablet, ({
   theme
 }) => theme.bp.mobile);
 const Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "style__Text"
-})(["display:flex;flex-direction:column;justify-content:center;max-width:620px;padding:180px 0;text-align:start;color:", ";font-weight:600;font-size:30px;line-height:36px;@media (max-width:", "){height:500px;width:700px;padding:20px;}@media (max-width:", "){height:500px;width:320px;padding:20px;}"], ({
+})(["display:flex;flex-direction:column;justify-content:center;max-width:900px;padding:180px 40px;text-align:start;color:", ";font-weight:600;font-size:36px;line-height:36px;@media (max-width:", "){font-size:36px;max-width:800px;}@media (max-width:", "){max-width:620px;font-size:36px;padding:80px 0;}@media (max-width:", "){max-width:550px;font-size:36px;padding:80px 0;}@media (max-width:", "){padding:80px 0;max-width:550px;font-size:36px;line-height:42px;}@media (max-width:", "){height:300px;max-width:700px;padding:20px;font-size:36px;margin-top:80px;}@media (max-width:", "){height:480px;max-width:460px;padding-right:20px;font-size:36px;}"], ({
   theme
-}) => theme.COLORS.BLACK, ({
+}) => theme.COLORS.WHITE, ({
+  theme
+}) => theme.bp.hugeDesktop, ({
+  theme
+}) => theme.bp.bigDesktop, ({
+  theme
+}) => theme.bp.desktop, ({
+  theme
+}) => theme.bp.smallDesktop, ({
   theme
 }) => theme.bp.tablet, ({
   theme
 }) => theme.bp.mobile);
 const Subtext = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "style__Subtext"
-})(["font-size:18px;font-weight:400;line-height:normal;max-width:528px;margin-top:14px;@media (max-width:", "){height:100px;width:700px;}@media (max-width:", "){height:300px;width:240px;}"], ({
+})(["font-size:20px;font-weight:400;line-height:1.3;max-width:750px;margin-top:14px;@media (max-width:", "){font-size:20px;max-width:700px;}@media (max-width:", "){max-width:620px;font-size:20px;}@media (max-width:", "){max-width:550px;font-size:20px;}@media (max-width:", "){max-width:450px;font-size:20px;}@media (max-width:", "){height:100px;max-width:700px;font-size:20px;}@media (max-width:", "){height:170px;max-width:400px;font-size:20px;padding-bottom:25px;}"], ({
+  theme
+}) => theme.bp.hugeDesktop, ({
+  theme
+}) => theme.bp.bigDesktop, ({
+  theme
+}) => theme.bp.desktop, ({
+  theme
+}) => theme.bp.smallDesktop, ({
   theme
 }) => theme.bp.tablet, ({
   theme
 }) => theme.bp.mobile);
 const BackgroundCasal = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "style__BackgroundCasal"
-})(["background:url(", ")center/cover no-repeat;width:500px;height:500px;margin-left:440px;margin-top:32px;@media (max-width:", "){display:none;}@media (max-width:", "){display:none;}"], _images_casal_png__WEBPACK_IMPORTED_MODULE_1__["default"], ({
+})(["background:url(", ")center/cover no-repeat;width:500px;height:500px;margin-left:300px;margin-top:35px;@media (max-width:", "){width:500px;height:500px;margin-left:190px;margin-top:35px;}@media (max-width:", "){width:500px;height:500px;margin-left:100px;margin-top:32px;}@media (max-width:", "){width:400px;height:400px;margin-left:90px;margin-top:135px;}@media (max-width:", "){width:400px;height:400px;margin-left:-20px;margin-top:135px;}@media (max-width:", "){width:400px;height:400px;margin-left:-20px;margin-top:110px;}@media (max-width:", "){display:flex;justify-content:start;align-items:start;margin:0 auto;width:500px;height:500px;}@media (max-width:", "){width:300px;height:300px;}"], _images_casal_png__WEBPACK_IMPORTED_MODULE_1__["default"], ({
   theme
-}) => theme.bp.mobile, ({
+}) => theme.bp.hugeDesktop, ({
   theme
-}) => theme.bp.tablet);
+}) => theme.bp.veryBigDesktop, ({
+  theme
+}) => theme.bp.bigDesktop, ({
+  theme
+}) => theme.bp.desktop, ({
+  theme
+}) => theme.bp.smallDesktop, ({
+  theme
+}) => theme.bp.tablet, ({
+  theme
+}) => theme.bp.mobile);
 const Button = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
   displayName: "style__Button"
-})(["width:203px;height:45px;margin-top:34px;background-color:", ";color:", ";box-shadow:0px 4px 4px 0px rgba(0,0,0,0.28);border:none;border-radius:0px 10px;transition:0.3s ease-in-out;&:hover{color:", ";background-color:", ";border:1px solid ", ";}@media (max-width:", "){margin-left:0;width:203px;height:40px;}@media (max-width:", "){margin-left:0;width:203px;height:50px;}"], ({
+})(["width:203px;height:45px;margin-top:34px;background-color:", ";color:", ";box-shadow:0px 4px 4px 0px rgba(0,0,0,0.28);border:none;border-radius:0px 10px;transition:0.3s ease-in-out;&:hover{color:", ";background-color:", ";border:1px solid ", ";}@media (max-width:", "){margin-left:0;width:203px;height:40px;}@media (max-width:", "){margin-left:0;width:203px;}"], ({
   theme
 }) => theme.COLORS.GREEN, ({
   theme
@@ -194,13 +226,19 @@ __webpack_require__.r(__webpack_exports__);
 
 const NavContainer = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].nav.withConfig({
   displayName: "style__NavContainer"
-})(["display:flex;justify-content:space-between;align-items:center;padding:1rem;position:relative;"]);
+})(["display:flex;justify-content:space-between;align-items:center;padding:1rem;position:relative;@media (max-width:", "){padding-left:20px;}"], ({
+  theme
+}) => theme.bp.smallDesktop);
 const Logo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "style__Logo"
 })([""]);
 const NavLinks = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.withConfig({
   displayName: "style__NavLinks"
-})(["display:flex;font-weight:400;gap:48px;padding-right:74px;transition:0.5s ease-in-out;@media (max-width:", "){display:", ";flex-direction:column;position:absolute;top:100px;right:15px;background-color:", ";width:100%;text-align:center;padding:2.5rem 0;border-radius:10px;}"], ({
+})(["display:flex;font-weight:400;gap:48px;padding-right:74px;transition:0.5s ease-in-out;@media (max-width:", "){padding:20px;text-align:right;}@media (max-width:", "){padding:20px;text-align:right;}@media (max-width:", "){display:", ";flex-direction:column;position:absolute;top:100px;right:15px;background-color:", ";width:100%;text-align:center;padding:2.5rem 0;border-radius:10px;}"], ({
+  theme
+}) => theme.bp.desktop, ({
+  theme
+}) => theme.bp.smallDesktop, ({
   theme
 }) => theme.bp.tablet, ({
   open
@@ -209,7 +247,7 @@ const NavLinks = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.wi
 }) => theme.COLORS.GREEN);
 const BaseLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].li.withConfig({
   displayName: "style__BaseLink"
-})(["font-size:18px;color:", ";padding-top:10px;transition:color 0.3s ease-in-out;margin-right:20px;font-weight:400;&:hover{color:", ";}@media (max-width:", "){margin-right:0px;&:hover{color:", ";}}"], ({
+})(["font-size:18px;color:", ";padding-top:10px;transition:color 0.3s ease-in-out;margin-right:20px;font-weight:400;&:hover{color:", ";}@media (max-width:", "){margin-right:0px;font-size:28px;&:hover{color:", ";}}"], ({
   theme
 }) => theme.COLORS.WHITE, ({
   theme
@@ -223,7 +261,7 @@ const NavLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(Ba
 })(["transition:none;"]);
 const Link = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(BaseLink).withConfig({
   displayName: "style__Link"
-})(["border-radius:0 10px;border:1px solid #f1f1f1;width:205px;height:34px;flex-shrink:0;padding-inline:auto;text-align:center;font-weight:500;transition:all 0.3s ease-in-out;&:hover{color:", ";background-color:", ";}@media (max-width:", "){justify-content:center;margin:0 auto;}"], ({
+})(["border-radius:0 10px;border:1px solid #f1f1f1;width:205px;height:34px;flex-shrink:0;padding-inline:auto;text-align:center;font-weight:500;transition:all 0.3s ease-in-out;&:hover{color:", ";background-color:", ";}@media (max-width:", "){justify-content:center;margin:0 auto;width:405px;height:34px;padding-top:1px;}"], ({
   theme
 }) => theme.COLORS.BROWN, ({
   theme
