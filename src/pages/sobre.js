@@ -9,7 +9,7 @@ import { HeroComponent } from '../components/Hero';
 
 
 const About = styled.div`
-  padding-block: 180px;
+  padding-block: 80px;
   background: ${({ theme }) => theme.COLORS.WHITE};
 
   h1 {
