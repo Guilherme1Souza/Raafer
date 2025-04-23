@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import React from 'react';
 import { Helmet } from 'react-helmet';
+
+import Raafer from '../images/raafer.jpg'
+
 import { HeroComponent } from '../components/Hero';
 
 
 const About = styled.div`
-  padding-inline: 288px;
   padding-block: 180px;
   background: ${({theme}) => theme.COLORS.WHITE};
 
@@ -22,6 +24,20 @@ const About = styled.div`
     font-size: 3.2rem;
     font-weight: 600;
   }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 480px;
+      font-size: 1rem;
+      padding-block: 9.0rem;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
 `;
 
 const AboutBox = styled.div`
@@ -29,30 +45,69 @@ const AboutBox = styled.div`
     background: ${({theme}) => theme.COLORS.WHITE};
     box-shadow: 4px 4px 20.8px 0px rgba(0, 0, 0, 0.45);
     width: 864px;
-    height: 449px;
+    height: auto;
     flex-shrink: 0;
     margin: 5.0rem auto;
     padding-top: 2.2rem;
+
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 425px;
+      font-size: 1rem;
+    }
 `;
 
 const AboutImg = styled.div`
     border-radius: 100px;
-    width: 161px;
-    height: 153px;
+    width: 150px;
+    height: 150px;
     flex-shrink: 0;
-    background-color: ${({theme}) => theme.COLORS.GRAY};
+    background: url(${Raafer}) center;
+    background-size: cover;
     margin: 0 auto;
 `;
 
-const Position = styled.p`
-    width: 142px;
+const Position = styled.div`
+    width: 14rem; 
     color: #1E1E1E;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    margin: 10px auto;
+    margin: 15px auto;
+    line-height: 1.8rem;
+
+    p {
+      color: rgba(0, 0, 0, 0.57);
+      text-align: center;
+      font-size: 1.2rem;
+      margin-block: 1rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 480px;
+      font-size: 1.8rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+`;
+
+const AboutText = styled.div`
+  color: #1E1E1E;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  max-width: 640px;
+  padding-bottom: 3.0rem;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 450px;
+      font-size: 1.6rem;
+      padding-inline: 1rem;
+  }
 `;
 
 const Sobre = () => {
@@ -74,7 +129,17 @@ const Sobre = () => {
           <Position>
             Raphael Pires e 
             Fernanda Pires
+            <p>CEOs e Fundadores</p>
+            Raafer
           </Position>
+          <AboutText>
+          "O Raafer atua há mais de quatro anos no mercado, oferecendo soluções em alimentação sustentável para empresas, 
+          seus colaboradores e estabelecimentos comerciais. Nosso compromisso é promover o bem-estar por meio de uma 
+          nutrição equilibrada, garantindo a reposição de vitaminas essenciais que elevam a satisfação, qualidade de 
+          vida e desempenho no ambiente de trabalho. Acreditamos que uma alimentação adequada fortalece a disposição 
+          e o engajamento, tornando o dia a dia mais saudável e produtivo. 
+          Com inovação e excelência, ajudamos negócios que valorizam o cuidado com as pessoas e a sustentabilidade."
+          </AboutText>
         </AboutBox>
       </About>
     </>

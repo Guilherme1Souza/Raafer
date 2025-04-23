@@ -322,6 +322,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
@@ -329,6 +330,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+const About = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+  displayName: "sobre__About"
+})(["padding-inline:288px;padding-block:180px;background:", ";h1{color:", ";text-align:center;font-size:7.6rem;font-weight:600;}span{display:block;color:#1E1E1E;font-size:3.2rem;font-weight:600;}"], ({
+  theme
+}) => theme.COLORS.WHITE, ({
+  theme
+}) => theme.COLORS.BLACK);
+const AboutBox = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+  displayName: "sobre__AboutBox"
+})(["border-radius:5px;background:", ";box-shadow:4px 4px 20.8px 0px rgba(0,0,0,0.45);width:864px;height:449px;flex-shrink:0;margin:5.0rem auto;padding-top:2.2rem;"], ({
+  theme
+}) => theme.COLORS.WHITE);
+const AboutImg = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+  displayName: "sobre__AboutImg"
+})(["border-radius:100px;width:161px;height:153px;flex-shrink:0;background-color:", ";margin:0 auto;"], ({
+  theme
+}) => theme.COLORS.GRAY);
+const Position = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
+  displayName: "sobre__Position"
+})(["width:142px;color:#1E1E1E;text-align:center;font-size:14px;font-style:normal;font-weight:600;line-height:normal;margin:10px auto;"]);
 const Sobre = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Quem Somos | Raafer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "description",
@@ -339,7 +361,7 @@ const Sobre = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     property: "og:description",
     content: "Conhe\xE7a nossa trajet\xF3ria e os pilares que nos guiam."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_2__.HeroComponent, null));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_2__.HeroComponent, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(About, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "DO RAAFER ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "PARA SUA FAMILIA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutImg, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Position, null, "Raphael Pires e Fernanda Pires"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sobre);
 
