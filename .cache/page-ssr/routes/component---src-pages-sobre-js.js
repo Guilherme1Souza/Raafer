@@ -312,6 +312,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/images/mercado.png":
+/*!********************************!*\
+  !*** ./src/images/mercado.png ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/mercado-a338bb95da0202be01e733c9daf28135.png");
+
+/***/ }),
+
+/***/ "./src/images/raafer.jpg":
+/*!*******************************!*\
+  !*** ./src/images/raafer.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/raafer-a2c048e5f3e6d22cb5a2aaf7ba469f67.jpg");
+
+/***/ }),
+
 /***/ "./src/pages/sobre.js?export=default":
 /*!*******************************************!*\
   !*** ./src/pages/sobre.js?export=default ***!
@@ -322,35 +350,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
-/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Hero */ "./src/components/Hero/index.jsx");
+/* harmony import */ var _images_raafer_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/raafer.jpg */ "./src/images/raafer.jpg");
+/* harmony import */ var _images_mercado_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/mercado.png */ "./src/images/mercado.png");
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Hero */ "./src/components/Hero/index.jsx");
 
 
 
 
-const About = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+
+
+const About = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "sobre__About"
-})(["padding-inline:288px;padding-block:180px;background:", ";h1{color:", ";text-align:center;font-size:7.6rem;font-weight:600;}span{display:block;color:#1E1E1E;font-size:3.2rem;font-weight:600;}"], ({
+})(["padding-block:180px;background:", ";h1{color:", ";text-align:center;font-size:7.6rem;font-weight:600;}span{display:block;color:#1E1E1E;font-size:3.2rem;font-weight:600;}@media (max-width:", "){max-width:480px;font-size:1rem;padding-block:9.0rem;h1{font-size:5rem;}span{font-size:2.5rem;}}"], ({
   theme
 }) => theme.COLORS.WHITE, ({
   theme
-}) => theme.COLORS.BLACK);
-const AboutBox = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+}) => theme.COLORS.BLACK, ({
+  theme
+}) => theme.bp.mobile);
+const AboutBox = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "sobre__AboutBox"
-})(["border-radius:5px;background:", ";box-shadow:4px 4px 20.8px 0px rgba(0,0,0,0.45);width:864px;height:449px;flex-shrink:0;margin:5.0rem auto;padding-top:2.2rem;"], ({
+})(["border-radius:5px;background:", ";box-shadow:4px 4px 20.8px 0px rgba(0,0,0,0.45);width:864px;height:auto;flex-shrink:0;margin:5.0rem auto;padding-top:2.2rem;@media (max-width:", "){max-width:425px;font-size:1rem;}"], ({
   theme
-}) => theme.COLORS.WHITE);
-const AboutImg = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+}) => theme.COLORS.WHITE, ({
+  theme
+}) => theme.bp.mobile);
+const AboutImg = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "sobre__AboutImg"
-})(["border-radius:100px;width:161px;height:153px;flex-shrink:0;background-color:", ";margin:0 auto;"], ({
-  theme
-}) => theme.COLORS.GRAY);
-const Position = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
+})(["border-radius:100px;width:150px;height:150px;flex-shrink:0;background:url(", ") center;background-size:cover;margin:0 auto;"], _images_raafer_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
+const Position = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "sobre__Position"
-})(["width:142px;color:#1E1E1E;text-align:center;font-size:14px;font-style:normal;font-weight:600;line-height:normal;margin:10px auto;"]);
+})(["width:14rem;color:#1E1E1E;text-align:center;font-size:1.4rem;font-style:normal;font-weight:600;margin:15px auto;line-height:1.8rem;p{color:rgba(0,0,0,0.57);text-align:center;font-size:1.2rem;margin-block:1rem;}@media (max-width:", "){max-width:480px;font-size:1.8rem;p{font-size:1.4rem;}}"], ({
+  theme
+}) => theme.bp.mobile);
+const AboutText = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+  displayName: "sobre__AboutText"
+})(["color:#1E1E1E;text-align:center;margin:0 auto;font-size:1.8rem;font-weight:500;line-height:2.2rem;max-width:640px;padding-bottom:3.0rem;@media (max-width:", "){max-width:450px;font-size:1.6rem;padding-inline:1rem;}"], ({
+  theme
+}) => theme.bp.mobile);
+const Pillars = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+  displayName: "sobre__Pillars"
+})(["position:relative;background:url(", ");height:500px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;display:flex;align-items:center;justify-content:center;color:white;text-align:center;padding:2rem;z-index:1;&::before{content:'';position:absolute;inset:0;background-color:rgba(0,0,0,0.5);z-index:0;}> *{position:relative;z-index:1;h2{color:#FFF;font-size:50px;font-style:normal;font-weight:800;line-height:normal;}}"], _images_mercado_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
 const Sobre = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Quem Somos | Raafer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "description",
@@ -361,7 +405,7 @@ const Sobre = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     property: "og:description",
     content: "Conhe\xE7a nossa trajet\xF3ria e os pilares que nos guiam."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_2__.HeroComponent, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(About, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "DO RAAFER ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "PARA SUA FAMILIA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutImg, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Position, null, "Raphael Pires e Fernanda Pires"))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_4__.HeroComponent, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(About, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "DO RAAFER ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "PARA SUA FAMILIA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutImg, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Position, null, "Raphael Pires e Fernanda Pires", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "CEOs e Fundadores"), "Raafer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutText, null, "\"O Raafer atua h\xE1 mais de quatro anos no mercado, oferecendo solu\xE7\xF5es em alimenta\xE7\xE3o sustent\xE1vel para empresas, seus colaboradores e estabelecimentos comerciais. Nosso compromisso \xE9 promover o bem-estar por meio de uma nutri\xE7\xE3o equilibrada, garantindo a reposi\xE7\xE3o de vitaminas essenciais que elevam a satisfa\xE7\xE3o, qualidade de vida e desempenho no ambiente de trabalho. Acreditamos que uma alimenta\xE7\xE3o adequada fortalece a disposi\xE7\xE3o e o engajamento, tornando o dia a dia mais saud\xE1vel e produtivo. Com inova\xE7\xE3o e excel\xEAncia, ajudamos neg\xF3cios que valorizam o cuidado com as pessoas e a sustentabilidade.\""))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Pillars, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Nossos Pilares"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Texto explicando os valores ou pilares da empresa.")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sobre);
 

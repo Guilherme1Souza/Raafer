@@ -3,16 +3,17 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Raafer from '../images/raafer.jpg'
+import Mercado from '../images/mercado.png'
 
 import { HeroComponent } from '../components/Hero';
 
 
 const About = styled.div`
   padding-block: 180px;
-  background: ${({theme}) => theme.COLORS.WHITE};
+  background: ${({ theme }) => theme.COLORS.WHITE};
 
   h1 {
-    color: ${({theme}) => theme.COLORS.BLACK};
+    color: ${({ theme }) => theme.COLORS.BLACK};
     text-align: center;
     font-size: 7.6rem;
     font-weight: 600;
@@ -42,7 +43,7 @@ const About = styled.div`
 
 const AboutBox = styled.div`
     border-radius: 5px;
-    background: ${({theme}) => theme.COLORS.WHITE};
+    background: ${({ theme }) => theme.COLORS.WHITE};
     box-shadow: 4px 4px 20.8px 0px rgba(0, 0, 0, 0.45);
     width: 864px;
     height: auto;
@@ -110,6 +111,64 @@ const AboutText = styled.div`
   }
 `;
 
+const Pillars = styled.div`
+background-color: ${({ theme }) => theme.COLORS.WHITE};
+`
+
+const PillarsBox = styled.div`
+  position: relative;
+  background: url(${Mercado}) no-repeat center fixed;
+  background-size: contain;
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  text-align: center;
+  padding: 2rem;
+  min-height: 60vh;
+  z-index: 1;
+  margin-bottom: 180px;
+
+`;
+
+const PillarsContent = styled.div`
+  position: relative;
+  z-index: 2; 
+  width: 60%;
+
+  p {
+    margin-top: 22px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+`;
+
+const PillarsTitle = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  font-size: 5.5rem;
+  text-align: center;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    flex-grow: 1;
+    margin: 0 1rem;
+  }
+`;
+
+
+
 const Sobre = () => {
   return (
     <>
@@ -119,29 +178,35 @@ const Sobre = () => {
         <meta property="og:title" content="Quem Somos | Raafer" />
         <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
       </Helmet>
-      <HeroComponent/>
+      <HeroComponent />
       <About>
         <h1>DO RAAFER <span>PARA SUA FAMILIA</span></h1>
         <AboutBox>
-          <AboutImg>
-
-          </AboutImg>
+          <AboutImg />
           <Position>
-            Raphael Pires e 
+            Raphael Pires e
             Fernanda Pires
             <p>CEOs e Fundadores</p>
             Raafer
           </Position>
           <AboutText>
-          "O Raafer atua há mais de quatro anos no mercado, oferecendo soluções em alimentação sustentável para empresas, 
-          seus colaboradores e estabelecimentos comerciais. Nosso compromisso é promover o bem-estar por meio de uma 
-          nutrição equilibrada, garantindo a reposição de vitaminas essenciais que elevam a satisfação, qualidade de 
-          vida e desempenho no ambiente de trabalho. Acreditamos que uma alimentação adequada fortalece a disposição 
-          e o engajamento, tornando o dia a dia mais saudável e produtivo. 
-          Com inovação e excelência, ajudamos negócios que valorizam o cuidado com as pessoas e a sustentabilidade."
+            "O Raafer atua há mais de quatro anos no mercado, oferecendo soluções em alimentação sustentável para empresas,
+            seus colaboradores e estabelecimentos comerciais. Nosso compromisso é promover o bem-estar por meio de uma
+            nutrição equilibrada, garantindo a reposição de vitaminas essenciais que elevam a satisfação, qualidade de
+            vida e desempenho no ambiente de trabalho. Acreditamos que uma alimentação adequada fortalece a disposição
+            e o engajamento, tornando o dia a dia mais saudável e produtivo.
+            Com inovação e excelência, ajudamos negócios que valorizam o cuidado com as pessoas e a sustentabilidade."
           </AboutText>
         </AboutBox>
       </About>
+      <Pillars>
+        <PillarsBox>
+          <PillarsContent>
+            <PillarsTitle>NOSSOS PILARES</PillarsTitle>
+            <p>Compromisso, qualidade e paixão em tudo o que fazemos.</p>
+          </PillarsContent>
+        </PillarsBox>
+      </Pillars>
     </>
   );
 };
