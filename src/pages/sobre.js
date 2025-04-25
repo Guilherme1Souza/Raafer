@@ -6,11 +6,11 @@ import Raafer from '../images/raafer.jpg'
 import Mercado from '../images/mercado.png'
 
 import { HeroComponent } from '../components/Hero';
+import { CardsSection } from '../components/Card';
 
 
 const About = styled.div`
   padding-block: 80px;
-  background: ${({ theme }) => theme.COLORS.WHITE};
 
   h1 {
     color: ${({ theme }) => theme.COLORS.BLACK};
@@ -112,14 +112,12 @@ const AboutText = styled.div`
 `;
 
 const Pillars = styled.div`
-background-color: ${({ theme }) => theme.COLORS.WHITE};
 `
 
 const PillarsBox = styled.div`
   position: relative;
   background: url(${Mercado}) no-repeat center fixed;
-  background-size: contain;
-  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  background-size: 100% auto;
   height: auto;
   display: flex;
   align-items: center;
@@ -129,7 +127,7 @@ const PillarsBox = styled.div`
   padding: 2rem;
   min-height: 60vh;
   z-index: 1;
-  margin-bottom: 180px;
+  margin-bottom: 8.0rem;
 
 `;
 
@@ -139,8 +137,8 @@ const PillarsContent = styled.div`
   width: 60%;
 
   p {
-    margin-top: 22px;
-  font-size: 22px;
+  margin-top: 2.2rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -207,6 +205,7 @@ const Sobre = () => {
           </PillarsContent>
         </PillarsBox>
       </Pillars>
+      <CardsSection/>
     </>
   );
 };
