@@ -1,10 +1,15 @@
 import styled from "styled-components";
+
 export const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4.6rem; 
   padding: 4rem; 
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    flex-direction: column;
+  }
 `;
 
 export const PillarsCard = styled.div`

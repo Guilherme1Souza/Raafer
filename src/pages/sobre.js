@@ -51,8 +51,15 @@ const AboutBox = styled.div`
     margin: 5.0rem auto;
     padding-top: 2.2rem;
 
+    
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+      max-width: 650px;
+      font-size: 1.6rem;
+      padding-inline: 1rem;
+  }
+
     @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      max-width: 425px;
+      max-width: 375px;
       font-size: 1rem;
     }
 `;
@@ -85,7 +92,7 @@ const Position = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      max-width: 480px;
+      max-width: 375px;
       font-size: 1.8rem;
 
       p {
@@ -129,6 +136,10 @@ const PillarsBox = styled.div`
   z-index: 1;
   margin-bottom: 8.0rem;
 
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    margin-bottom: 1.0rem;
+  }
+
 `;
 
 const PillarsContent = styled.div`
@@ -142,6 +153,11 @@ const PillarsContent = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 480px;
+      font-size: 1.7rem;
+    }
   }
 `;
 
@@ -163,6 +179,17 @@ const PillarsTitle = styled.h2`
     flex-grow: 1;
     margin: 0 1rem;
   }
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+      max-width: 650px;
+      font-size: 3.8rem;
+      padding-inline: 1rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 375px;
+     
+    }
 `;
 
 
