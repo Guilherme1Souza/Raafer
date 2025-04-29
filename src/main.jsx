@@ -1,8 +1,9 @@
 import React from "react";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Sobre from './pages/sobre'
+import { AppRoutes } from "./routes/routes";
 import { ThemeProvider } from "styled-components";
+import { BrowserRouter } from "react-router-dom";
 
 import theme from "./styles/theme";
 
@@ -10,7 +11,9 @@ import theme from "./styles/theme";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <ThemeProvider theme={theme}>
-    <Sobre />
+     <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
 )

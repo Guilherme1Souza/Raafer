@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "gatsby";  // Importando o Link do Gatsby
+
 
 export const NavContainer = styled.nav`
     display: flex;
@@ -50,7 +52,7 @@ export const NavLinks = styled.ul`
     }
 `;
 
-const BaseLink = styled.li`
+export const StyledLink = styled.li`
     font-size: 2.0rem;
     color: ${({ theme }) => theme.COLORS.WHITE};
     padding-top: 10px;
@@ -71,11 +73,11 @@ const BaseLink = styled.li`
     }
 `;
 
-export const NavLink = styled(BaseLink)`
+export const NavLi = styled(Link)`
     transition: none;
 `;
 
-export const Link = styled(BaseLink)`
+export const Links = styled(StyledLink)`
     border-radius: 0 10px;
     border: 1px solid #f1f1f1;
     width: 205px;
