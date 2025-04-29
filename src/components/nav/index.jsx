@@ -21,7 +21,6 @@ export function Nav() {
                 <NavLink>Inicio</NavLink>
                 <NavLink>Sobre</NavLink>
                 <NavLink>Contato</NavLink>
-                <NavLink>Clientes</NavLink>
                 <Link>Seja um patrocinador</Link>
             </NavLinks>
         </NavContainer>
