@@ -7,6 +7,7 @@ import Mercado from '../images/mercado.png'
 
 import { HeroComponent } from '../components/Hero';
 import { CardsSection } from '../components/Card';
+import { Testimonials } from '../components/testimonials';
 
 
 const About = styled.div`
@@ -233,6 +234,7 @@ const Sobre = () => {
         </PillarsBox>
       </Pillars>
       <CardsSection/>
+      <Testimonials/>
     </>
   );
 };

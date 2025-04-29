@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Mariana Costa Ribeiro",
+      "role": "Manager",
+      "company": "Ifood",
+      "testimonial": "A Raafer é sinônimo de qualidade e frescor! Selecionamos os melhores produtos direto do campo para garantir que cada fruta, legume e verdura chegue à sua mesa com sabor e nutrientes preservados. Nosso compromisso é levar o melhor da natureza para você, sempre com atendimento de excelência.",
+      "rating": 5,
+       "image": "mariana"
+    },
+    {
+      "name": "Lucas Ferreira Mendes",
+      "role": "Operations Manager",
+      "company": "Hortifruti Brasil",
+      "testimonial": "Na Raafer, acreditamos que uma alimentação saudável começa com ingredientes frescos e selecionados. Trabalhamos diariamente para oferecer frutas, legumes e verduras da mais alta qualidade, garantindo procedência e sabor em cada produto. Nossa missão é facilitar sua vida, proporcionando uma experiência de compra confiável.",
+      "rating": 5,
+      "image": "lucas"
+    },
+    {
+      "name": "Ricardo Mendes",
+      "role": "Head of Supply Chain",
+      "company": "Verde Natural",
+      "testimonial": "A Raafer é o hortifruti de confiança para quem busca produtos frescos e saudáveis. Nossa parceria com produtores comprometidos com a qualidade nos permite entregar o que há de melhor para sua família. Além disso, prezamos pelo atendimento acolhedor e pela variedade que faz a diferença no seu dia a dia.",
+      "rating": 5,
+      "image": "ricardo"
+    },
+    {
+      "name": "Juliana Costa",
+      "role": "Gerente de Compras",
+      "company": "Empório Vida Saudável",
+      "testimonial": "Escolhemos a Raafer pela excelência na seleção dos produtos e pelo compromisso com a sustentabilidade. A qualidade das frutas e verduras impressiona, e o suporte da equipe torna tudo ainda mais fácil e eficiente.",
+      "rating": 5,
+      "image": "juliana"
+    }
+  ]
+  
