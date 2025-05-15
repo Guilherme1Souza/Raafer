@@ -2,8 +2,8 @@ import React from 'react';
 import testimonialsData from '../../../testimonials.json';
 import { Container, Title, Card, Avatar, Name, Role, Company, Text, Stars } from './style';
 
-import imgMariana from '../../images/womenProfissional.png';
-import imgLucas from '../../images/menProfissional.png';
+import nanicaLogo from '../../images/nanicaLogo.jpg';
+import magaluLogo from '../../images/magaluLogo.jpg';
 import imgRicardo from '../../images/menTenProfissional.png';
 import imgJuliana from '../../images/juwomen.png';
 
@@ -13,8 +13,8 @@ import Slider from "react-slick";
 
 
 const imageMap = {
-    mariana: imgMariana,
-    lucas: imgLucas,
+    nanica: nanicaLogo,
+    magalu: magaluLogo,
     ricardo: imgRicardo,
     juliana: imgJuliana,
 };
