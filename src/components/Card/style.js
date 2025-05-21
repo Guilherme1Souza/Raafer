@@ -7,6 +7,7 @@ export const CardsContainer = styled.div`
   gap: 4.6rem; 
   padding: 4rem; 
 
+
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     flex-direction: column;
   }
