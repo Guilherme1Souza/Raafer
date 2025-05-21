@@ -205,7 +205,11 @@ const Sobre = () => {
         <meta property="og:title" content="Quem Somos | Raafer" />
         <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
       </Helmet>
-      <HeroComponent />
+      <HeroComponent
+        title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."
+      subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
+      buttonText="Conheça nossos clientes"
+      />
       <About>
         <h1>DO RAAFER <span>PARA SUA FAMILIA</span></h1>
         <AboutBox>

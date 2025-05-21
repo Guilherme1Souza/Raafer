@@ -3,6 +3,7 @@ import imgCasal from "../../images/casal.png"
 
 
 export const Container = styled.div`
+position: relative;
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23655225' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23AB8B3E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23a9893d' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23a6873c' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23a4853b' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23a1833a' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%239f813a' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239d7f39' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%239a7d38' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23987b37' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23967936' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23937735' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23917534' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%238f7433' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%238c7232' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%238a7032' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23886e31' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23856c30' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23836A2F' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
