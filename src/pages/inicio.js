@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/Hero';
 import styled from 'styled-components';
+import AnimatedNumber from '../../animated';
 
 const Numbers = styled.div`
   position: absolute;
@@ -61,15 +62,15 @@ const Home = () => {
           <Numbers>
             <div style={{ display: 'flex', gap: '60px' }}>
               <div>
-                <strong>+ 1.500,00</strong>
+                <AnimatedNumber value={1500} />
                 <p>Frutas entregues</p>
               </div>
               <div>
-                <strong>+ 690</strong>
+                <AnimatedNumber value={690} />
                 <p>Clientes atendidos</p>
               </div>
               <div>
-                <strong>+ 25.000,00</strong>
+                <AnimatedNumber value={25000} />
                 <p>Vidas transformadas</p>
               </div>
             </div>
