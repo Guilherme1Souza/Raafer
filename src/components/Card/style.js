@@ -6,6 +6,7 @@ export const CardsContainer = styled.div`
   align-items: center;
   gap: 4.6rem; 
   padding: 4rem; 
+  padding-bottom: 12rem;
 
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
