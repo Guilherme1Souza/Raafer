@@ -19,6 +19,18 @@ const Numbers = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 10;
+  gap: 6rem;
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+      max-width: 650px;
+      font-size: 3.8rem;
+      padding-inline: 1rem;
+  }
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 375px;
+       gap: 1rem;
+    }
 `;
 
 
@@ -42,6 +54,20 @@ const Estatistics = styled.div`
     font-size: 16px;
     font-weight: 700;
   }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+   display: flex;  
+   flex-direction: column;
+   width: 50%;
+  
+    strong {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+    }
   `;
 
 const Process = styled.div`
@@ -51,6 +77,10 @@ const Process = styled.div`
 
   h2 {
      font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
+  }
+
+   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+      padding-inline: 1rem;
   }
 `;
 
@@ -62,6 +92,24 @@ const ProcessLoading = styled.div`
   gap: 2rem;
   flex-wrap: wrap;
   padding: 0 10.9rem;
+
+   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+`;
+
+const StyledIcon = styled(MoveRight)`
+  width: 24px;
+  height: 24px;
+
+   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
+    display: none;
+  }
 `;
 
 const ProcessContent = styled.div`
@@ -100,7 +148,6 @@ const Home = () => {
       <div style={{ position: 'relative' }}>
         <Estatistics>
           <Numbers>
-            <div style={{ display: 'flex', gap: '60px' }}>
               <div>
                 <AnimatedNumber value={1500} />
                 <p>Frutas entregues</p>
@@ -113,7 +160,6 @@ const Home = () => {
                 <AnimatedNumber value={25000} />
                 <p>Vidas transformadas</p>
               </div>
-            </div>
           </Numbers>
         </Estatistics>
       </div>
@@ -124,17 +170,17 @@ const Home = () => {
             <Search />
             <h3>Seleção das melhores frutas</h3>
           </ProcessContent>
-            <MoveRight />
+            <StyledIcon />
           <ProcessContent>
             <Droplet />
             <h3>Higienização das frutas</h3>
           </ProcessContent>
-            <MoveRight />
+            <StyledIcon />
           <ProcessContent>
             <ShoppingBag />
             <h3>Montagem do pedido</h3>
           </ProcessContent>
-            <MoveRight />
+            <StyledIcon />
           <ProcessContent>
              <Truck />
             <h3>Saída para entrega</h3>
