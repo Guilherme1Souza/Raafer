@@ -71,9 +71,11 @@ const ProcessContent = styled.div`
   gap: 1rem;
   align-items: center;
   padding-top: 4.9rem;
+  margin: 0 auto;
 
   h3 {
   text-align: center;
+  line-height: 2rem;
   font-size: 18px;
   font-weight: 500;
   width: 142px;
@@ -125,7 +127,7 @@ const Home = () => {
             <MoveRight />
           <ProcessContent>
             <Droplet />
-            <h3>Higienização</h3>
+            <h3>Higienização das frutas</h3>
           </ProcessContent>
             <MoveRight />
           <ProcessContent>
