@@ -1,9 +1,15 @@
 import React from 'react';
+import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/Hero';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
 import { Search, MoveRight, Droplet, ShoppingBag, Truck } from 'lucide-react';
+import centauroLogo from '../images/centauroLogo.png';
+import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
+import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
+import MenFazendeiro from '../images/menFazendeiro.png';
+import { Button } from '../components/Hero/style';
 
 const Numbers = styled.div`
   position: absolute;
@@ -130,8 +136,82 @@ const ProcessContent = styled.div`
   }
   `;
 
+const Clientes = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23.8rem 10.9rem;
+  flex-wrap: wrap;
+`;
+
+const TextContainer = styled.div`
+  max-width: 500px;
+`;
+
+const Title = styled.h2`
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 16px;
+`;
+
+const HighlightText = styled.p`
+  font-size: 18px;
+  color: #b88e2f;
+  font-weight: 600;
+  line-height: 1.6;
+`;
+
+const CarouselWrapper = styled.div`
+  margin: 24px 0;
+`;
+
+const Logo = styled.img`
+  height: 32px;
+`;
+
+const Image = styled.img`
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+`;
+
+
 
 const Home = () => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  };
+
+  const logos = [
+     { src: centauroLogo, alt: 'Centauro' },
+     { src: MagaluLogoNegative, alt: 'Magalu' },
+     { src: NanicaLogoNegatice, alt: 'Nanica' },
+  ];
+
+
+
   return (
     <>
       <Helmet>
@@ -148,18 +228,18 @@ const Home = () => {
       <div style={{ position: 'relative' }}>
         <Estatistics>
           <Numbers>
-              <div>
-                <AnimatedNumber value={1500} />
-                <p>Frutas entregues</p>
-              </div>
-              <div>
-                <AnimatedNumber value={690} />
-                <p>Clientes atendidos</p>
-              </div>
-              <div>
-                <AnimatedNumber value={25000} />
-                <p>Vidas transformadas</p>
-              </div>
+            <div>
+              <AnimatedNumber value={1500} />
+              <p>Frutas entregues</p>
+            </div>
+            <div>
+              <AnimatedNumber value={690} />
+              <p>Clientes atendidos</p>
+            </div>
+            <div>
+              <AnimatedNumber value={25000} />
+              <p>Vidas transformadas</p>
+            </div>
           </Numbers>
         </Estatistics>
       </div>
@@ -170,23 +250,46 @@ const Home = () => {
             <Search />
             <h3>Seleção das melhores frutas</h3>
           </ProcessContent>
-            <StyledIcon />
+          <StyledIcon />
           <ProcessContent>
             <Droplet />
             <h3>Higienização das frutas</h3>
           </ProcessContent>
-            <StyledIcon />
+          <StyledIcon />
           <ProcessContent>
             <ShoppingBag />
             <h3>Montagem do pedido</h3>
           </ProcessContent>
-            <StyledIcon />
+          <StyledIcon />
           <ProcessContent>
-             <Truck />
+            <Truck />
             <h3>Saída para entrega</h3>
           </ProcessContent>
         </ProcessLoading>
       </Process>
+      <Clientes>
+        <TextContainer>
+          <Title>Clientes que escolhem a Raafer</Title>
+          <HighlightText>
+            Mais de 540 clientes, 100 grandes corporações que levam saúde e qualidade de vida
+            para os seus colaboradores
+          </HighlightText>
+
+          <CarouselWrapper>
+            <Slider {...settings}>
+              {logos.map((logo, index) => (
+                <div key={index}>
+                  <Logo src={logo.src} alt={logo.alt} />
+                </div>
+              ))}
+            </Slider>
+          </CarouselWrapper>
+
+         <Button>Orçamento para sua empresa</Button>
+        </TextContainer>
+
+        <Image src={MenFazendeiro} alt="Homem segurando bananas" />
+      </Clientes>
     </>
   );
 }
