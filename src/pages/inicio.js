@@ -10,6 +10,7 @@ import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
 import MenFazendeiro from '../images/menFazendeiro.png';
 import { Button } from '../components/Hero/style';
+import { Testimonials } from '../components/testimonials';
 
 const Numbers = styled.div`
   position: absolute;
@@ -127,6 +128,7 @@ const ProcessContent = styled.div`
   padding-top: 4.9rem;
   margin: 0 auto;
 
+
   h3 {
   text-align: center;
   line-height: 2rem;
@@ -136,11 +138,12 @@ const ProcessContent = styled.div`
   }
   `;
 
+
 const Clientes = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23.8rem 10.9rem;
+  padding: 18.8rem 10.9rem 0;
   flex-wrap: wrap;
 `;
 
@@ -149,9 +152,10 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 18px;
+  font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
   color: #333;
   margin-bottom: 16px;
+  font-weight: 600;
 `;
 
 const HighlightText = styled.p`
@@ -284,12 +288,11 @@ const Home = () => {
               ))}
             </Slider>
           </CarouselWrapper>
-
          <Button>Orçamento para sua empresa</Button>
         </TextContainer>
-
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>
+      <Testimonials />
     </>
   );
 }
