@@ -11,6 +11,7 @@ import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
 import MenFazendeiro from '../images/menFazendeiro.png';
 import { Button } from '../components/Hero/style';
 import { Testimonials } from '../components/testimonials';
+import { LineBottom } from '../components/line';
 
 const Numbers = styled.div`
   position: absolute;
@@ -80,7 +81,8 @@ const Estatistics = styled.div`
 const Process = styled.div`
   font-weight: 600;
   padding-inline: 10.9rem;
-  padding-top: 15rem;
+  padding-block: 18rem;
+  background: ${({ theme }) => theme.COLORS.WHITE2};
 
   h2 {
      font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
@@ -271,6 +273,7 @@ const Home = () => {
           </ProcessContent>
         </ProcessLoading>
       </Process>
+      <LineBottom/>
       <Clientes>
         <TextContainer>
           <Title>Clientes que escolhem a Raafer</Title>

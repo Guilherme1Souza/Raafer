@@ -5,6 +5,7 @@ const theme = {
     GREEN: "#354A21",
     BLACK: "#1E1E1E",
     GRAY: "#828282",
+    WHITE2: "#F1F1F1",
   },
   FONTS: {
     PRIMARY: "Figtree, sans-serif",
