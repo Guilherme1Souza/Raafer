@@ -234,7 +234,6 @@ const Sobre = () => {
         <PillarsBox>
           <PillarsContent>
             <PillarsTitle>NOSSOS PILARES</PillarsTitle>
-            <p>Compromisso, qualidade e paixão em tudo o que fazemos.</p>
           </PillarsContent>
         </PillarsBox>
       </Pillars>
