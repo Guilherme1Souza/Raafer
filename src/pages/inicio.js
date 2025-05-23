@@ -11,6 +11,7 @@ import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
 import MenFazendeiro from '../images/menFazendeiro.png';
 import { Button } from '../components/Hero/style';
 import { Testimonials } from '../components/testimonials';
+import { Footer } from '../components/footer';
 import { LineBottom } from '../components/line';
 import { Apresentacao } from '../components/apresentação';
 
@@ -299,6 +300,7 @@ const Home = () => {
       </Clientes>
       <Testimonials />
       <Apresentacao />
+      <Footer />
     </>
   );
 }
