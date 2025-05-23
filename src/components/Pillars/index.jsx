@@ -1,14 +1,14 @@
 import React from "react";
 import { WePillarsContent, PillarsTitle, PillarsContent} from "./style";
 
-export function Pillars({subtitle, paragraphy}) {
+export function Pillars({subtitle, children}) {
   return (
     <>
     <WePillarsContent>
         <PillarsContent>
         <PillarsTitle>
              {subtitle}
-             <p>{paragraphy}</p>
+             <p>{children }</p>
         </PillarsTitle>
         </PillarsContent>
     </WePillarsContent>

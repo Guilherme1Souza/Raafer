@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/Hero';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
-import { Search, MoveRight, Droplet, ShoppingBag, Truck } from 'lucide-react';
+import { Search, MoveRight, Droplet, ShoppingBag, Truck, Download } from 'lucide-react';
 import centauroLogo from '../images/centauroLogo.png';
 import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
@@ -12,6 +12,7 @@ import MenFazendeiro from '../images/menFazendeiro.png';
 import { Button } from '../components/Hero/style';
 import { Testimonials } from '../components/testimonials';
 import { LineBottom } from '../components/line';
+import { Apresentacao } from '../components/apresentação';
 
 const Numbers = styled.div`
   position: absolute;
@@ -81,7 +82,7 @@ const Estatistics = styled.div`
 const Process = styled.div`
   font-weight: 600;
   padding-inline: 10.9rem;
-  padding-block: 18rem;
+  padding-block: 15rem;
   background: ${({ theme }) => theme.COLORS.WHITE2};
 
   h2 {
@@ -180,6 +181,7 @@ const Image = styled.img`
   width: 100%;
   height: auto;
 `;
+
 
 
 
@@ -296,6 +298,7 @@ const Home = () => {
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>
       <Testimonials />
+      <Apresentacao />
     </>
   );
 }
