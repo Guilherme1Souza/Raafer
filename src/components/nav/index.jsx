@@ -25,7 +25,7 @@ export function Nav() {
                     <NavLi to="/sobre">
                         <StyledLink>Quem somos</StyledLink>
                     </NavLi>
-                    <NavLi to="/">
+                    <NavLi to="/contato">
                         <StyledLink>Contato</StyledLink>
                     </NavLi>
                     <NavLi to="/">

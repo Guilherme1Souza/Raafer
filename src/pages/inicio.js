@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/Hero';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
-import { Search, MoveRight, Droplet, ShoppingBag, Truck, Download } from 'lucide-react';
+import { Search, MoveRight, Droplet, ShoppingBag, Truck } from 'lucide-react';
 import centauroLogo from '../images/centauroLogo.png';
 import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
@@ -187,6 +187,7 @@ const Image = styled.img`
 
 
 const Home = () => {
+  
 
   const settings = {
     dots: false,
