@@ -9,6 +9,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Duvidas from '../components/duvidas';
+import { Footer } from '../components/footer';
 
 const Form = styled.div`
   display: flex;
@@ -323,7 +324,8 @@ const Contato = () => {
                     </ContactBox>
                 </SideBox>
             </Form>
-            <Duvidas/>
+            <Duvidas />
+            <Footer />
         </>
     );
 };
