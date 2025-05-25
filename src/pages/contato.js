@@ -8,6 +8,7 @@ import { Mail, Phone } from 'lucide-react';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import Duvidas from '../components/duvidas';
 
 const Form = styled.div`
   display: flex;
@@ -322,6 +323,7 @@ const Contato = () => {
                     </ContactBox>
                 </SideBox>
             </Form>
+            <Duvidas/>
         </>
     );
 };
