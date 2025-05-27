@@ -4,7 +4,7 @@ import { Container, Title, Card, Avatar, Name, Role, Company, Text, Stars } from
 
 import nanicaLogo from '../../images/nanicaLogo.jpg';
 import magaluLogo from '../../images/magaluLogo.jpg';
-import imgRicardo from '../../images/menTenProfissional.png';
+import imgVixtra from '../../images/vixtraLogo.png';
 import imgJuliana from '../../images/juwomen.png';
 
 import "slick-carousel/slick/slick.css";
@@ -15,7 +15,7 @@ import Slider from "react-slick";
 const imageMap = {
     nanica: nanicaLogo,
     magalu: magaluLogo,
-    ricardo: imgRicardo,
+    vixtra: imgVixtra,
     juliana: imgJuliana,
 };
 
