@@ -207,9 +207,14 @@ const Contato = () => {
         <>
             <Helmet>
                 <title>Contato | Raafer</title>
-                <meta name="description" content="Saiba mais sobre a história da Raafer e o nosso compromisso com produtos frescos." />
-                <meta property="og:title" content="Quem Somos | Raafer" />
-                <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
+                <meta
+                    name="description"
+                    content="Entre em contato com a Raafer. Estamos prontos para atender você com produtos frescos e sustentáveis. Tire suas dúvidas e fale conosco!"
+                />
+                <meta name="keywords" content="contato Raafer, fale conosco, atendimento, produtos frescos, suporte Raafer"/>
+                <meta property="og:description" content="Fale com a Raafer! Tire suas dúvidas, envie sugestões e descubra como podemos ajudar você com nossos produtos naturais e frescos." />
+                <meta name="author" content="Raphael Pires e Fernanda Pires" />
+                 <meta property="og:url" content="https://www.seusite.com.br/contato" />
             </Helmet>
             <HeroComponent
                 title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."

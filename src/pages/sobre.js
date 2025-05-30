@@ -129,6 +129,8 @@ const Sobre = () => {
         <meta name="description" content="Saiba mais sobre a história da Raafer e o nosso compromisso com produtos frescos." />
         <meta property="og:title" content="Quem Somos | Raafer" />
         <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
+        <meta name="author" content="Raphael Pires e Fernanda Pires" />
+        <meta property="og:url" content="https://www.seusite.com.br/sobre" />
       </Helmet>
       <HeroComponent
         title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."

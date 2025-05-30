@@ -5,7 +5,6 @@ import theme from "./src/styles/theme";
 
 export const onClientEntry = () => {
     if (typeof window !== 'undefined' && window.location.pathname === '/') {
-      window.location.replace('/sobre');
     }
   };
 

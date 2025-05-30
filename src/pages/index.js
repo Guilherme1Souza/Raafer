@@ -187,7 +187,7 @@ const Image = styled.img`
 
 
 const Home = () => {
-  
+
 
   const settings = {
     dots: false,
@@ -215,9 +215,9 @@ const Home = () => {
   };
 
   const logos = [
-     { src: centauroLogo, alt: 'Centauro' },
-     { src: MagaluLogoNegative, alt: 'Magalu' },
-     { src: NanicaLogoNegatice, alt: 'Nanica' },
+    { src: centauroLogo, alt: 'Centauro' },
+    { src: MagaluLogoNegative, alt: 'Magalu' },
+    { src: NanicaLogoNegatice, alt: 'Nanica' },
   ];
 
 
@@ -226,10 +226,22 @@ const Home = () => {
     <>
       <Helmet>
         <title>Inicio | Raafer</title>
-        <meta name="description" content="Saiba mais sobre a história da Raafer e o nosso compromisso com produtos frescos." />
-        <meta property="og:title" content="Quem Somos | Raafer" />
-        <meta property="og:description" content="Conheça nossa trajetória e os pilares que nos guiam." />
+        <meta
+          name="description"
+          content="Bem-vindo à Raafer! Conheça nossa linha de alimentos frescos, naturais e sustentáveis, direto do produtor para sua casa. Qualidade e saúde em cada escolha."
+        />
+        <meta
+          property="og:title"
+          content="Raafer | Sua Fonte de Alimentos Naturais e Frescos"
+        />
+        <meta
+          property="og:description"
+          content="Descubra como a Raafer transforma a alimentação com produtos naturais, frescos e de origem sustentável. Experimente saúde e sabor em cada detalhe."
+        />
+         <meta name="author" content="Raafer" />
+         <meta property="og:url" content="https://www.raafer.com.br/" />
       </Helmet>
+
       <HeroComponent
         title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."
         subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
@@ -277,7 +289,7 @@ const Home = () => {
           </ProcessContent>
         </ProcessLoading>
       </Process>
-      <LineBottom/>
+      <LineBottom />
       <Clientes>
         <TextContainer>
           <Title>Clientes que escolhem a Raafer</Title>
@@ -295,7 +307,7 @@ const Home = () => {
               ))}
             </Slider>
           </CarouselWrapper>
-         <Button>Orçamento para sua empresa</Button>
+          <Button>Orçamento para sua empresa</Button>
         </TextContainer>
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>
