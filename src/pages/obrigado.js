@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import imgLogo from '../images/logo.svg';
 
 const ObrigadoModal = ({ isOpen, onClose }) => {
@@ -67,6 +68,11 @@ const ObrigadoModal = ({ isOpen, onClose }) => {
       </div>
     </>
   );
+};
+
+ObrigadoModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default ObrigadoModal;
