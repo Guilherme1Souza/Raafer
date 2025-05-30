@@ -1,6 +1,5 @@
 // src/components/Duvidas/index.jsx
 import React from 'react';
-import * as Accordion from '@radix-ui/react-accordion';
 import {
   Container,
   Title,
@@ -17,8 +16,8 @@ const Duvidas = () => (
   <Container>
     <Title>Dúvidas Frequentes</Title>
     <StyledAccordion type="single" collapsible>
-      {questions.map((question, index) => (
-        <Item value={`item-${index}`} key={index}>
+      {questions.map((question) => (
+        <Item value={question} key={question}>
           <Header>
             <Trigger>
               {question}

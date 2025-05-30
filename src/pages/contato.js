@@ -193,7 +193,7 @@ const Contato = () => {
     };
 
     // Passa os dados do estado manualmente ao Formspree no submit
-    const onSubmit = (e) => {
+    const onSubmitForm = (e) => {
         e.preventDefault();
         // Cria um objeto FormData com os dados do estado
         const formData = new FormData();
@@ -222,7 +222,7 @@ const Contato = () => {
                 buttonText="Conheça nossos clientes"
             />
             <Form>
-                <FormBox onSubmit={handleSubmit}>
+                <FormBox onSubmit={onSubmitForm}>
                     <h3>Deixe sua mensagem que entraremos em contato</h3>
                     <Row>
                         <Input
