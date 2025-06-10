@@ -7,6 +7,7 @@ const theme = {
     GRAY: "#828282",
     WHITE2: "#F1F1F1",
   },
+  
   FONTS: {
     PRIMARY: "Figtree, sans-serif",
     SECONDARY: "Mea Culpa, serif",

@@ -1,5 +1,6 @@
 {
   "name": "raafer",
+  "author": "Guilherme Souza",
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",

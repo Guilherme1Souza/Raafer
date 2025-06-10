@@ -163,7 +163,6 @@ const Contato = () => {
         empresa: "",
         colaboradores: "",
         descoberta: "",
-
     });
 
     useEffect(() => {
