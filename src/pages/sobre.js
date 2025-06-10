@@ -1,18 +1,41 @@
-import styled from 'styled-components';
-import React from 'react';
+import styled, { keyframes, css } from "styled-components";
+import React, {useRef, useState, useEffect} from 'react';
 import { Helmet } from 'react-helmet';
 
 import Raafer from '../images/raafer.jpg'
 
 import { HeroComponent } from '../components/Hero';
-import { CardsSection } from '../components/Card';
+import { CardsSection } from '../components/card';
 import { Testimonials } from '../components/testimonials';
 import {Footer} from '../components/footer';
 import { Pillars } from '../components/Pillars';
 
 
+
+
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
 const About = styled.div`
   padding-block: 80px;
+  opacity: 0;
+  transform: translateX(-60px);
+  visibility: hidden;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 0.8s ease-out forwards;
+      visibility: visible;
+    `}
 
   h1 {
     color: ${({ theme }) => theme.COLORS.BLACK};
@@ -122,6 +145,25 @@ const AboutText = styled.div`
 
 
 const Sobre = () => {
+
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -137,7 +179,7 @@ const Sobre = () => {
       subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
       buttonText="Conheça nossos clientes"
       />
-      <About>
+      <About ref={ref} isVisible={isVisible}>
         <h1>DO RAAFER <span>PARA SUA FAMILIA</span></h1>
         <AboutBox>
           <AboutImg />
