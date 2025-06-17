@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from "gatsby";  // Importando o Link do Gatsby
 
 export const FooterContainer = styled.footer`
   background-color: #e0e0e0;
@@ -7,10 +8,11 @@ export const FooterContainer = styled.footer`
 
 export const ContentGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
+  column-gap: 80px; /* reduzido de 40px */
   max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
+  margin: 20px auto;
 
   @media (max-width: 970px) {
     grid-template-columns: repeat(2, 1fr);
@@ -33,7 +35,7 @@ export const Logo = styled.img`
 `;
 
 export const Description = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
   line-height: 1.5;
 `;
@@ -44,7 +46,7 @@ export const Title = styled.h4`
   margin-bottom: 10px;
 `;
 
-export const LinkItem = styled.a`
+export const LinkItem = styled(Link)`
   font-size: 14px;
   color: #333;
   text-decoration: none;

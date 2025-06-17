@@ -11,18 +11,19 @@ export function Footer() {
           <Column>
             <Logo src={imgLogo} alt="Logo da Raafer" />
             <Description>
-              Raafer: seu parceiro em alimentação saudável e sustentável, promovendo excelência e bem-estar no ambiente de trabalho.
-              Oferecemos frutas selecionadas com qualidade e frescor diário, fortalecendo a saúde e a produtividade dos seus colaboradores.
-              Transforme seus momentos de pausa em experiências nutritivas e inspiradoras.”
+              Levamos sabor, frescor e saúde ao seu ambiente corporativo com frutas selecionadas e serviço de confiança.
+              Plantamos bem-estar todos os dias.
+
+              Raafer — Criando Raízes.
             </Description>
           </Column>
 
           <Column>
             <Title>Institucional</Title>
-            <LinkItem href="#">Sobre</LinkItem>
-            <LinkItem href="#">Fale Conosco</LinkItem>
-            <LinkItem href="#">Trabalhe Conosco</LinkItem>
-            <LinkItem href="#">Dúvidas Frequentes</LinkItem>
+            <LinkItem to="/sobre">Sobre</LinkItem>
+            <LinkItem>Fale Conosco</LinkItem>
+            <LinkItem>Trabalhe Conosco</LinkItem>
+            <LinkItem to="/contato">Dúvidas Frequentes</LinkItem>
           </Column>
 
           <Column>

@@ -1,13 +1,34 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { Link } from "gatsby";  // Importando o Link do Gatsby
 
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const NavContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    z-index: 2;
     position: relative;
+
+     transform: translateY(60px);
+        visibility: hidden;
+      
+        ${({ isVisible }) =>
+          isVisible &&
+          css`
+            animation: ${slideInLeft} 1.88s ease-out forwards;
+            visibility: visible;
+          `}
 
     @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) { 
         padding-left: 20px;
@@ -48,7 +69,9 @@ export const NavLinks = styled.ul`
     }
 
     @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+        justify-content: center;
         right: 5px;  
+        height: 300px;
     }
 `;
 

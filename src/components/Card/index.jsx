@@ -8,18 +8,18 @@ export function CardsSection() {
   const cardData = [
     {
       title: "Missão",
-      description: "Superar as expectativas dos clientes, através da experiência de compra e da mais ampla oferta de soluções, no âmbito das nossas atividades, gerando valor aos acionistas, colaboradores e fornecedores.",
-      delay: "0.4s"
+      description: "Distribuir frutas e alimentos selecionados com excelência, praticidade e compromisso com a saúde dos colaboradores, fortalecendo hábitos saudáveis dentro das empresas.",
+      delay: "0.2s"
     },
     {
       title: "Visão",
-      description: "Ser referência nacional em qualidade, inovação e excelência no atendimento, promovendo crescimento sustentável e reconhecido pelo mercado.",
-      delay: "0.6s"
+      description: "Construir um ambiente corporativo mais saudável, através de uma alimentação natural, acessível e de qualidade, sendo reconhecida por sua dedicação e compromisso com o bem-estar dos colaboradores.",
+      delay: "0.4s"
     },
     {
       title: "Valores",
-      description: "Ética, respeito às pessoas, transparência, inovação, responsabilidade socioambiental e compromisso com resultados.",
-      delay: "0.8s"
+      description: "Entregamos mais que frutas, entregamos cuidado. Prezamos pela qualidade, sustentabilidade, pontualidade e confiança, sempre com foco no relacionamento humano com clientes, fornecedores e colaboradores.",
+      delay: "0.6s"
     }
   ];
 

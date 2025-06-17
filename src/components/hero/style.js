@@ -1,5 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import imgCasal from "../../images/casal.png"
+
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 
 export const Container = styled.div`
@@ -38,6 +49,16 @@ position: relative;
 
 export const BoxHero = styled.div`
   display: flex;
+
+   transform: translateX(-60px);
+    visibility: hidden;
+  
+    ${({ isVisible }) =>
+      isVisible &&
+      css`
+        animation: ${slideInLeft} 1.68s ease-out forwards;
+        visibility: visible;
+      `}
   
 
   @media (max-width: ${({ theme }) => theme.bp.desktop}) {

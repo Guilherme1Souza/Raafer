@@ -3,7 +3,7 @@ import styled, { keyframes, css } from "styled-components";
 const slideInLeft = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-60px);
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
