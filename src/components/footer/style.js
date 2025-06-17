@@ -9,7 +9,8 @@ export const FooterContainer = styled.footer`
 export const ContentGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
-  column-gap: 80px; /* reduzido de 40px */
+  column-gap: 80px; 
+  row-gap: 20px;
   max-width: 1200px;
   align-items: center;
   margin: 20px auto;
