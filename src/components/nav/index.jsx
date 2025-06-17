@@ -36,7 +36,7 @@ export function Nav() {
                     <img src={menuOpen ? closeIcon : hamburguer} alt="Menu" />
                 </MenuIcon>
                 <NavLinks open={menuOpen}>
-                <NavLi to="/inicio">
+                <NavLi to="/">
                         <StyledLink>Inicio</StyledLink>
                     </NavLi>
                     <NavLi to="/sobre">
