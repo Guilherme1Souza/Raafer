@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { HeroComponent } from '../components/Hero/index';
+import { HeroComponent } from '../components/hero';
 import { useForm, ValidationError } from "@formspree/react";
 import ObrigadoModal from './obrigado';
 import { Mail, Phone } from 'lucide-react';

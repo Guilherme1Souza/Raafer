@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
-import { HeroComponent } from '../components/Hero/index';
+import { HeroComponent } from '../components/hero';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
 import { Search, MoveRight, Droplet, ShoppingBag, Truck, Leaf, Clock, ChartArea } from 'lucide-react';
@@ -9,7 +9,7 @@ import centauroLogo from '../images/centauroLogo.png';
 import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
 import MenFazendeiro from '../images/menFazendeiro.png';
-import { Button } from '../components/Hero/style';
+import { Button } from '../components/hero';
 import { Testimonials } from '../components/testimonials';
 import { Footer } from '../components/footer';
 import { LineBottom } from '../components/line';
