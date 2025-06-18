@@ -6,11 +6,20 @@ import Mercado from '../../images/mercado.png';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-     background: url(${Mercado}) no-repeat center;
-      background-size: 100% auto;
+    background: url(${Mercado}) no-repeat center;
+    background-size: 100% auto;
     align-items: center;
     justify-content: center;
     padding-block: 15rem;
+
+    
+        @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+            padding-block: 2rem;
+        }
+
+        @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+            padding-block: 0;
+        }
     
     h2 {
         font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
@@ -28,7 +37,8 @@ export const Container = styled.div`
 
         @media (max-width: ${({ theme }) => theme.bp.mobile}) {
             max-width: 375px;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            
         }
     } 
     `;
@@ -45,6 +55,14 @@ export const FormWrapper = styled.div`
   width: 590px;
   height: 34px;
   flex-shrink: 0;
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    max-width: 400px;
+    padding-inline: 0.75rem;
+    height: 30px;
+    width: 430px;
+    margin-bottom: 1rem;
+}
 `;
 
 export const EmailInput = styled.input`
@@ -64,6 +82,11 @@ export const EmailInput = styled.input`
     outline: none;
     background-color: transparent;
   }
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+            padding: 0.75rem 0rem;
+        }
+   
 `;
 
 export const DownloadButton = styled.button`
@@ -83,4 +106,7 @@ export const DownloadButton = styled.button`
   &:hover {
     background-color: #d2e8d7;
   }
+
+
+ 
 `;

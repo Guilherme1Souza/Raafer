@@ -100,6 +100,10 @@ const Process = styled.div`
       padding-left: 4rem;
       padding-top: 25rem;
   }
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      padding-left: 2rem;
+  }
 `;
 
 const ProcessLoading = styled.div`
@@ -117,7 +121,6 @@ const ProcessLoading = styled.div`
     margin: 0 auto;
 
   }
-
 `;
 
 const StyledIcon = styled(MoveRight)`
@@ -155,10 +158,21 @@ const Clientes = styled.div`
   align-items: center;
   padding: 18.8rem 10.9rem 0;
   flex-wrap: wrap;
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     padding: 6rem 2rem 0;
+    flex-wrap: wrap;
+  }
+  
 `;
 
 const TextContainer = styled.div`
   max-width: 500px;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    max-width: 350px;
+    flex-wrap: wrap;
+  }
 `;
 
 const Title = styled.h2`
