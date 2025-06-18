@@ -1,5 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react';
-import { Container, BoxHero, Text, Subtext, Background, Button } from './style';
+import { Container, BoxHero, Text, Subtext, Background, Button } from './style.js';
 import { Nav } from '../nav/index.jsx';
 
 export function HeroComponent({ title, subtitle, buttonText }) {
