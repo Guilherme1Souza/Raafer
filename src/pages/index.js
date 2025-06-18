@@ -1,5 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/hero';
 import styled from 'styled-components';
@@ -9,7 +12,6 @@ import centauroLogo from '../images/centauroLogo.png';
 import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
 import MenFazendeiro from '../images/menFazendeiro.png';
-import { Button } from '../components/hero';
 import { Testimonials } from '../components/testimonials';
 import { Footer } from '../components/footer';
 import { LineBottom } from '../components/line';
@@ -333,7 +335,6 @@ const Home = () => {
               ))}
             </Slider>
           </CarouselWrapper>
-          <Button>Orçamento para sua empresa</Button>
         </TextContainer>
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>
