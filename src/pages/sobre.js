@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import Raafer from '../images/raafer.jpg'
 
 import { HeroComponent } from '../components/hero';
-import { CardsSection } from '../components/card';
+import { CardsSection } from '../components/Card';
 import { Testimonials } from '../components/testimonials';
 import {Footer} from '../components/footer';
 import { Pillars } from '../components/Pillars';
