@@ -18,7 +18,14 @@ const Form = styled.div`
   gap: 40px;
   padding: 18.8rem 10.9rem;
   font-family: sans-serif;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
 `;
+
 
 const FormBox = styled.form`
   display: flex;
@@ -31,6 +38,10 @@ const FormBox = styled.form`
   background: #FFF;
   color: ${({ theme }) => theme.COLORS.GREEN};
   box-shadow: 8px 8px 22.7px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     width: 300px;
+  }
   
 
   h3 {
@@ -43,6 +54,10 @@ const FormBox = styled.form`
 const Row = styled.div`
   display: flex;
   gap: 12px;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    flex-direction: column;
+  }
 
   > input {
     flex: 1;
@@ -96,6 +111,11 @@ const SideBox = styled.div`
   flex-direction: column;
   gap: 50px;
   margin-top: 20px;
+
+   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     justify-content: center;
+     align-items: center;
+  }
  
 `;
 
@@ -110,10 +130,23 @@ const ContactBox = styled.div`
   box-shadow: 8px 8px 22.7px 0px rgba(0, 0, 0, 0.25);
   line-height: 35px;
 
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 300px;
+     flex-wrap: wrap;
+  }
+
   strong {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
+
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     font-size: 18px;
+     justify-content: start;
+  }
   }
 
   p {
@@ -123,6 +156,11 @@ const ContactBox = styled.div`
     font-weight: 600;
     line-height: normal;
     width: 333px;
+
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     font-size: 18px;
+     width: 180px;
+  }
   }
 
   svg {
@@ -140,6 +178,8 @@ const ContactContent = styled.div`
     flex-direction: column;
     padding-left: 30px;
     gap: 8px;
+
+     
 `;
 
 const Title = styled.h3`
@@ -148,6 +188,10 @@ const Title = styled.h3`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+     font-size: 28px;
+  }
 `;
 
 const Contato = () => {
