@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ThemeProvider } from "styled-components";
 import theme from "./src/styles/theme";
+import "./src/styles/reset.css";
+
 
 export const onClientEntry = () => {
   if (typeof window !== "undefined" && window.location.pathname === "/") {
