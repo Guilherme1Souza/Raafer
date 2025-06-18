@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
-import { HeroComponent } from '../components/Hero';
+import { HeroComponent } from '../components/Hero/index';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
 import { Search, MoveRight, Droplet, ShoppingBag, Truck, Leaf, Clock, ChartArea } from 'lucide-react';

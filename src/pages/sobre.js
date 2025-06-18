@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import Raafer from '../images/raafer.jpg'
 
-import { HeroComponent } from '../components/Hero';
+import { HeroComponent } from '../components/Hero/index';
 import { CardsSection } from '../components/card';
 import { Testimonials } from '../components/testimonials';
 import {Footer} from '../components/footer';
