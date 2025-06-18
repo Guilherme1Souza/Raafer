@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { HeroComponent } from '../components/Hero';
 import styled from 'styled-components';
 import AnimatedNumber from '../../animated';
-import { Search, MoveRight, Droplet, ShoppingBag, Truck } from 'lucide-react';
+import { Search, MoveRight, Droplet, ShoppingBag, Truck, Leaf, Clock, ChartArea } from 'lucide-react';
 import centauroLogo from '../images/centauroLogo.png';
 import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
 import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
@@ -19,8 +19,9 @@ const Numbers = styled.div`
   position: absolute;
   bottom: -50px; /* metade da altura do card */
   left: 50%;
+  padding-inline: 8rem;
   transform: translateX(-50%);
-  width: 851px;
+  width: 80%;
   height: 99px;
   border-radius: 0 10px;
   background: #FFF;
@@ -29,17 +30,22 @@ const Numbers = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 10;
-  gap: 6rem;
+  gap: 3rem;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      max-width: 650px;
+      width: 650px;
       font-size: 3.8rem;
       padding-inline: 1rem;
   }
 
    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      max-width: 375px;
-       gap: 1rem;
+      height: auto;
+      bottom: -150px;
+      margin-top: 80px;
+      padding-block: 1rem;
+      width: 355px;
+      flex-direction: column;
+      gap: 1rem;
     }
 `;
 
@@ -48,7 +54,7 @@ const Estatistics = styled.div`
   display: flex;  
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: start;
  
 
   strong {
@@ -60,7 +66,7 @@ const Estatistics = styled.div`
   }
 
   p {
-    color: #828282;
+    color:rgb(180, 125, 43);
     font-size: 16px;
     font-weight: 700;
   }
@@ -91,7 +97,8 @@ const Process = styled.div`
   }
 
    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      padding-inline: 1rem;
+      padding-left: 4rem;
+      padding-top: 25rem;
   }
 `;
 
@@ -106,7 +113,6 @@ const ProcessLoading = styled.div`
 
    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
 
@@ -238,29 +244,35 @@ const Home = () => {
           property="og:description"
           content="Descubra como a Raafer transforma a alimentação com produtos naturais, frescos e de origem sustentável. Experimente saúde e sabor em cada detalhe."
         />
-         <meta name="author" content="Raafer" />
-         <meta property="og:url" content="https://www.raafer.com.br/" />
+        <meta name="author" content="Raafer" />
+        <meta property="og:url" content="https://www.raafer.com.br/" />
       </Helmet>
 
       <HeroComponent
-        title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."
-        subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
+        title="Do campo para sua empresa"
+        subtitle="Frutas selecionadas que promovem saúde, bem-estar e produtividade no ambiente corporativo."
         buttonText="Conheça nossos clientes"
       />
       <div style={{ position: 'relative' }}>
         <Estatistics>
           <Numbers>
-            <div>
-              <AnimatedNumber value={1500} />
-              <p>Frutas entregues</p>
+           <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
+              <Leaf  style={{height: '50px', width: '50px'}} />
+              <p>Aumente o bem-estar e
+                melhore a produtividade
+              </p>
             </div>
-            <div>
-              <AnimatedNumber value={690} />
-              <p>Clientes atendidos</p>
+            <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
+              <Clock  style={{height: '50px', width: '50px'}} />
+              <p>Economize tempo e ofereça
+                mais saúde no seu ambiente de trabalho
+              </p>
             </div>
-            <div>
-              <AnimatedNumber value={25000} />
-              <p>Vidas transformadas</p>
+             <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
+              <ChartArea style={{height: '50px', width: '50px'}} />
+              <p>Reduza custos operacionais
+                com um serviço prático e eficiente
+              </p>
             </div>
           </Numbers>
         </Estatistics>

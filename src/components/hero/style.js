@@ -178,15 +178,15 @@ export const Subtext = styled.div`
 
 export const Background = styled.div`
   background: url(${imgCasal})center/cover no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin-left: 300px;
-  margin-top: 35px;
+  margin-top: 105px;
 
   @media (max-width: ${({ theme }) => theme.bp.hugeDesktop}) {
     width: 500px;
     height: 500px;
-    margin-left: 190px;
+    margin-left: 80px;
     margin-top: 35px;
   }
 
