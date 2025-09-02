@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components';
-import { ChevronDown } from 'lucide-react';
-import * as Accordion from '@radix-ui/react-accordion';
+import styled, { keyframes } from "styled-components";
+import { ChevronDown } from "lucide-react";
+import * as Accordion from "@radix-ui/react-accordion";
 
 const slideDown = keyframes`
   from { height: 0; }
@@ -16,12 +16,20 @@ export const Container = styled.section`
   background-color: #2e421c;
   color: white;
   padding: 10.8rem 10.9rem;
+
+  @media (max-width: 480px) {
+    padding: 5rem 5rem;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledAccordion = styled(Accordion.Root)`
@@ -58,7 +66,7 @@ export const Trigger = styled(Accordion.Trigger)`
     background-color: #3a4e29;
   }
 
-  &[data-state='open'] svg {
+  &[data-state="open"] svg {
     transform: rotate(180deg);
   }
 `;
@@ -68,15 +76,14 @@ export const Content = styled(Accordion.Content)`
   color: white;
   font-size: 15px;
 
-  &[data-state='open'] {
+  &[data-state="open"] {
     animation: ${slideDown} 300ms ease;
   }
 
-  &[data-state='closed'] {
+  &[data-state="closed"] {
     animation: ${slideUp} 300ms ease;
   }
 `;
-
 
 export const ChevronIcon = styled(ChevronDown)`
   width: 20px;

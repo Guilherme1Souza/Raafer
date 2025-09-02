@@ -1,48 +1,43 @@
 import styled from "styled-components";
-import Mercado from '../../images/mercado.png';
-
-
+import Mercado from "../../images/mercado.png";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    background: url(${Mercado}) no-repeat center;
-    background-size: 100% auto;
-    align-items: center;
-    justify-content: center;
-    padding-block: 15rem;
+  display: flex;
+  flex-direction: column;
+  background: url(${Mercado}) no-repeat center;
+  background-size: 100% auto;
+  align-items: center;
+  justify-content: center;
+  padding-block: 15rem;
 
-    
-        @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-            padding-block: 2rem;
-        }
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    padding-block: 2rem;
+  }
 
-        @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-            padding-block: 0;
-        }
-    
-    h2 {
-        font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
-        color: ${({ theme }) => theme.COLORS.WHITE};
-        text-align: center;
-        width: 755px;
-        margin-bottom: 2rem;
-        font-weight: 600;
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    padding-block: 4rem;
+  }
 
-        @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-            max-width: 650px;
-            font-size: 3.8rem;
-            padding-inline: 1rem;
-        }
+  h2 {
+    font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    text-align: center;
+    width: 755px;
+    margin-bottom: 2rem;
+    font-weight: 600;
 
-        @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-            max-width: 375px;
-            font-size: 2.2rem;
-            
-        }
-    } 
-    `;
+    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+      max-width: 650px;
+      font-size: 3.8rem;
+      padding-inline: 1rem;
+    }
 
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+      max-width: 375px;
+      font-size: 2.2rem;
+    }
+  }
+`;
 
 export const FormWrapper = styled.div`
   display: flex;
@@ -56,13 +51,13 @@ export const FormWrapper = styled.div`
   height: 34px;
   flex-shrink: 0;
 
-   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
     max-width: 400px;
     padding-inline: 0.75rem;
     height: 30px;
-    width: 430px;
+    width: 370px;
     margin-bottom: 1rem;
-}
+  }
 `;
 
 export const EmailInput = styled.input`
@@ -71,11 +66,11 @@ export const EmailInput = styled.input`
   outline: none;
   font-size: 1.8rem;
   flex: 1;
-   color: #FFFFFF;
-   background-color: transparent;
+  color: #ffffff;
+  background-color: transparent;
 
-    &::placeholder {
-    color: #FFFFFF;
+  &::placeholder {
+    color: #ffffff;
   }
 
   &:focus {
@@ -83,10 +78,10 @@ export const EmailInput = styled.input`
     background-color: transparent;
   }
 
-   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-            padding: 0.75rem 0rem;
-        }
-   
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    padding: 0.75rem 0rem;
+    width: 190px;
+  }
 `;
 
 export const DownloadButton = styled.button`
@@ -103,10 +98,11 @@ export const DownloadButton = styled.button`
   white-space: nowrap;
   transition: background 0.2s;
 
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    width: 370px;
+  }
+
   &:hover {
     background-color: #d2e8d7;
   }
-
-
- 
 `;
