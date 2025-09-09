@@ -14,6 +14,7 @@ import {
 } from "./style";
 import { Mail, Phone, Instagram } from "lucide-react";
 import imgLogo from "../../images/logo.svg";
+import { Link } from "gatsby";
 
 export function Footer() {
   return (
@@ -28,15 +29,18 @@ export function Footer() {
               todos os dias. Raafer — Criando Raízes.
             </Description>
           </Column>
-
           <Column>
             <Title>Institucional</Title>
-            <LinkItem to="/sobre">Sobre</LinkItem>
-            <LinkItem>Fale Conosco</LinkItem>
-            <LinkItem>Trabalhe Conosco</LinkItem>
-            <LinkItem to="/contato">Dúvidas Frequentes</LinkItem>
+            <Link to="/sobre">
+              <LinkItem>Sobre</LinkItem>
+            </Link>
+            <Link to="/contato">
+              <LinkItem>Fale Conosco</LinkItem>
+            </Link>
+            <Link to="/contato">
+              <LinkItem>Dúvidas Frequentes</LinkItem>
+            </Link>
           </Column>
-
           <Column>
             <Title>Contato</Title>
             <ContactItem>
@@ -48,15 +52,16 @@ export function Footer() {
             <ContactItem>
               <Phone size={16} /> (11) 98751-4466
             </ContactItem>
-          </Column>
-
-          <Column>
-            {/* <Title>Siga-nos nas redes sociais:</Title>
+            <Link to="/contato">
+              <Button>Faça um orçamento</Button>
+            </Link>
+          </Column>{" "}
+          {/* <Column>
+            <Title>Siga-nos nas redes sociais:</Title>
             <SocialIcon>
               <Instagram size={20} />
-            </SocialIcon> */}
-            <Button>Faça um orçamento</Button>
-          </Column>
+            </SocialIcon>
+          </Column> */}
         </ContentGrid>
         <CopyRight>
           © 2025 Raafer - Todos os direitos reservados - Desenvolvido por
