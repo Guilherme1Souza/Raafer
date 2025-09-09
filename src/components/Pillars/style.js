@@ -4,7 +4,7 @@ import Mercado from "../../images/mercado.png";
 export const WePillarsContent = styled.div`
   position: relative;
   background: url(${Mercado}) no-repeat center;
-  background-size: cover;
+  background-size: 100% auto;
   height: auto;
   display: flex;
   align-items: center;
