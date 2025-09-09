@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
-import imgCasal from "../../images/casal.png"
+import imgCasal from "../../images/casal.png";
 
 const slideInLeft = keyframes`
   from {
@@ -12,9 +12,8 @@ const slideInLeft = keyframes`
   }
 `;
 
-
 export const Container = styled.div`
-position: relative;
+  position: relative;
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23655225' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23AB8B3E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23a9893d' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23a6873c' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23a4853b' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23a1833a' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%239f813a' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239d7f39' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%239a7d38' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23987b37' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23967936' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23937735' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23917534' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%238f7433' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%238c7232' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%238a7032' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23886e31' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23856c30' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23836A2F' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -25,63 +24,61 @@ position: relative;
 
   @media (min-width: ${({ theme }) => theme.bp.hugeDesktop}) {
     padding-inline: 26.9rem;
-    }
+  }
 
   @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) {
-        height: auto;
-        max-width: 100%;
-        background-size: cover;
-    }
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+  }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-        height: auto;
-        max-width: 100%;
-        background-size: cover;
-    }
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+  }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-        height: auto;
-        max-width: 100%;
-        background-size: cover;
-        padding-inline: 30px;
-    }
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    padding-inline: 30px;
+  }
 `;
 
 export const BoxHero = styled.div`
   display: flex;
 
-   transform: translateX(-60px);
-    visibility: hidden;
-  
-    ${({ isVisible }) =>
-      isVisible &&
-      css`
-        animation: ${slideInLeft} 1.68s ease-out forwards;
-        visibility: visible;
-      `}
-  
+  transform: translateX(-60px);
+  visibility: hidden;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 1.68s ease-out forwards;
+      visibility: visible;
+    `}
 
   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
-        gap: 14.0rem;
-        padding-left: 0;
+    gap: 14rem;
+    padding-left: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) {
-        max-width: 100%;
-        padding-left: 0;
+    max-width: 100%;
+    padding-left: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-        flex-direction: column;
-        max-width: 100%;
-        gap: 0.2rem;
-    }
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0.2rem;
+  }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-        flex-direction: column;
-        max-width: 100%;
-        
-    }
+    flex-direction: column;
+    max-width: 100%;
+  }
 `;
 
 export const Text = styled.div`
@@ -90,7 +87,6 @@ export const Text = styled.div`
   justify-content: center;
   padding: 180px 40px;
   color: ${({ theme }) => theme.COLORS.WHITE};
-  
 
   h1 {
     font-weight: 600;
@@ -105,36 +101,36 @@ export const Text = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.bp.bigDesktop}) {
-        max-width: 620px;
-        padding: 80px 0;
+    max-width: 620px;
+    padding: 80px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
-        max-width: 550px;
-        padding: 80px 0;
+    max-width: 550px;
+    padding: 80px 0;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) {
-        padding: 80px 0;
-        max-width: 550px;
-        line-height: 42px;
+    padding: 80px 0;
+    max-width: 550px;
+    line-height: 42px;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-        height: auto;
-        max-width: 700px;
-        padding: 20px;
-        margin: 10.0rem auto 0.5rem;
-        gap: 3.5rem;
-    }
+    height: auto;
+    max-width: 700px;
+    padding: 20px;
+    margin: 10rem auto 0.5rem;
+    gap: 3.5rem;
+  }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-        height: auto;
-        max-width: 460px;
-        padding: 0;
-        margin: 6.0rem auto;
-        text-align: start;
-    }
+    height: auto;
+    max-width: 460px;
+    padding: 0;
+    margin: 6rem auto;
+    text-align: start;
+  }
 `;
 
 export const Subtext = styled.div`
@@ -149,35 +145,30 @@ export const Subtext = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.bp.bigDesktop}) {
-        max-width: 620px;
-       
+    max-width: 620px;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
-        max-width: 550px;
-      
+    max-width: 550px;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.smallDesktop}) {
-        max-width: 450px;
-       
+    max-width: 450px;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-        height: 100px;
-        max-width: 700px;
-      
-    }
+    height: 100px;
+    max-width: 700px;
+  }
 
-    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      height: 180px;
-      max-width: 400px;
-    
-    }
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    height: 180px;
+    max-width: 400px;
+  }
 `;
 
 export const Background = styled.div`
-  background: url(${imgCasal})center/cover no-repeat;
+  background: url(${imgCasal}) center/cover no-repeat;
   width: 400px;
   height: 400px;
   margin-left: 300px;
@@ -204,7 +195,6 @@ export const Background = styled.div`
     margin-top: 135px;
   }
 
-
   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
     width: 100%;
     height: 400px;
@@ -219,7 +209,6 @@ export const Background = styled.div`
     margin-top: 110px;
   }
 
-
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     /* display: none; */
     display: flex;
@@ -228,12 +217,12 @@ export const Background = styled.div`
     margin: 0 auto;
     width: 500px;
     height: 500px;
-    }
+  }
 
-    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
     width: 300px;
     height: 300px;
-    }
+  }
 `;
 
 export const Button = styled.button`
@@ -244,24 +233,24 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.COLORS.WHITE};
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.28);
   border: none;
-  border-radius: 0px 10px;
+  border-radius: 6px;
   transition: 0.3s ease-in-out;
 
   &:hover {
-        color: ${({ theme }) => theme.COLORS.BLACK};
-        background-color: ${({ theme }) => theme.COLORS.WHITE};
-        border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
-    }
+    color: ${({ theme }) => theme.COLORS.BLACK};
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+  }
 
-    @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      margin-left: 0;
-      width: 203px;
-      height: 40px;
-    }
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    margin-left: 0;
+    width: 203px;
+    height: 40px;
+  }
 
-    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      margin-left: 0;
-      width: 203px;
-      margin-top: 0;
-    }
-`
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    margin-left: 0;
+    width: 203px;
+    margin-top: 0;
+  }
+`;

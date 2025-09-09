@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from "gatsby";  // Importando o Link do Gatsby
+import styled from "styled-components";
+import { Link } from "gatsby"; // Importando o Link do Gatsby
 
 export const FooterContainer = styled.footer`
   background-color: #e0e0e0;
@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
 export const ContentGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
-  column-gap: 80px; 
+  column-gap: 80px;
   row-gap: 20px;
   max-width: 1200px;
   align-items: center;
@@ -76,7 +76,7 @@ export const Button = styled.button`
   border: none;
   padding: 10px 14px;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 `;
 
