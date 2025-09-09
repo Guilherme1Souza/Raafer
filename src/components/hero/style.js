@@ -135,11 +135,11 @@ export const Text = styled.div`
 `;
 
 export const Subtext = styled.div`
-  font-size: clamp(1.8rem, 1vw + 0.6rem, 2.2rem);
+  font-size: clamp(1.6rem, 1.2vw + 0.8rem, 2.6rem);
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.5;
   max-width: 750px;
-  margin-top: 14px;
+  margin-top: 1.4rem;
 
   @media (max-width: ${({ theme }) => theme.bp.hugeDesktop}) {
     max-width: 700px;
@@ -158,13 +158,13 @@ export const Subtext = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-    height: 100px;
-    max-width: 700px;
+    max-width: 100%;
+    height: auto;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-    height: 180px;
-    max-width: 400px;
+    max-width: 100%;
+    height: auto;
   }
 `;
 
