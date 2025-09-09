@@ -128,7 +128,7 @@ const AboutText = styled.div`
   margin: 0 auto;
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   max-width: 640px;
   padding-bottom: 3rem;
 
