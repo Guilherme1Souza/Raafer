@@ -1,21 +1,30 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Helmet } from 'react-helmet';
-import { HeroComponent } from '../components/hero';
-import styled from 'styled-components';
-import AnimatedNumber from '../../animated';
-import { Search, MoveRight, Droplet, ShoppingBag, Truck, Leaf, Clock, ChartArea } from 'lucide-react';
-import centauroLogo from '../images/centauroLogo.png';
-import MagaluLogoNegative from '../images/magaluLogo-negative.jpg';
-import NanicaLogoNegatice from '../images/nanicaLogo-negative.png';
-import MenFazendeiro from '../images/menFazendeiro.png';
-import { Testimonials } from '../components/testimonials';
-import { Footer } from '../components/footer';
-import { LineBottom } from '../components/line';
-import { Apresentacao } from '../components/apresentação';
+import { Helmet } from "react-helmet";
+import { HeroComponent } from "../components/hero";
+import styled from "styled-components";
+import AnimatedNumber from "../../animated";
+import {
+  Search,
+  MoveRight,
+  Droplet,
+  ShoppingBag,
+  Truck,
+  Leaf,
+  Clock,
+  ChartArea,
+} from "lucide-react";
+import centauroLogo from "../images/centauroLogo.png";
+import MagaluLogoNegative from "../images/magaluLogo-negative.jpg";
+import NanicaLogoNegatice from "../images/nanicaLogo-negative.png";
+import MenFazendeiro from "../images/menFazendeiro.png";
+import { Testimonials } from "../components/testimonials";
+import { Footer } from "../components/footer";
+import { LineBottom } from "../components/line";
+import { Apresentacao } from "../components/apresentação";
 
 const Numbers = styled.div`
   position: absolute;
@@ -25,8 +34,8 @@ const Numbers = styled.div`
   transform: translateX(-50%);
   width: 80%;
   height: 99px;
-  border-radius: 0 10px;
-  background: #FFF;
+  border-radius: 6px;
+  background: #fff;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
@@ -35,29 +44,27 @@ const Numbers = styled.div`
   gap: 3rem;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      width: 650px;
-      font-size: 3.8rem;
-      padding-inline: 1rem;
+    width: 650px;
+    font-size: 3.8rem;
+    padding-inline: 1rem;
   }
 
-   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      height: auto;
-      bottom: -150px;
-      margin-top: 80px;
-      padding-block: 1rem;
-      width: 355px;
-      flex-direction: column;
-      gap: 1rem;
-    }
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    height: auto;
+    bottom: -150px;
+    margin-top: 80px;
+    padding-block: 1rem;
+    width: 355px;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
-
 const Estatistics = styled.div`
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: start;
- 
 
   strong {
     color: #000;
@@ -68,25 +75,24 @@ const Estatistics = styled.div`
   }
 
   p {
-    color:rgb(180, 125, 43);
+    color: rgb(180, 125, 43);
     font-size: 16px;
     font-weight: 700;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-   display: flex;  
-   flex-direction: column;
-   width: 50%;
-  
-    strong {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    display: block;
-  }
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 
+    strong {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: block;
     }
-  `;
+  }
+`;
 
 const Process = styled.div`
   font-weight: 600;
@@ -95,16 +101,16 @@ const Process = styled.div`
   background: ${({ theme }) => theme.COLORS.WHITE2};
 
   h2 {
-     font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
+    font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
   }
 
-   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      padding-left: 4rem;
-      padding-top: 25rem;
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    padding-left: 4rem;
+    padding-top: 25rem;
   }
 
-   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      padding-left: 2rem;
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    padding-left: 2rem;
   }
 `;
 
@@ -117,11 +123,10 @@ const ProcessLoading = styled.div`
   flex-wrap: wrap;
   padding: 0 10.9rem;
 
-   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     display: flex;
     align-items: center;
     margin: 0 auto;
-
   }
 `;
 
@@ -129,7 +134,7 @@ const StyledIcon = styled(MoveRight)`
   width: 24px;
   height: 24px;
 
-   @media (max-width: ${({ theme }) => theme.bp.desktop}) {
+  @media (max-width: ${({ theme }) => theme.bp.desktop}) {
     display: none;
   }
 `;
@@ -143,16 +148,14 @@ const ProcessContent = styled.div`
   padding-top: 4.9rem;
   margin: 0 auto;
 
-
   h3 {
-  text-align: center;
-  line-height: 2rem;
-  font-size: 18px;
-  font-weight: 500;
-  width: 142px;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    width: 142px;
   }
-  `;
-
+`;
 
 const Clientes = styled.div`
   display: flex;
@@ -161,11 +164,10 @@ const Clientes = styled.div`
   padding: 18.8rem 10.9rem 0;
   flex-wrap: wrap;
 
-   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-     padding: 6rem 2rem 0;
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    padding: 6rem 2rem 0;
     flex-wrap: wrap;
   }
-  
 `;
 
 const TextContainer = styled.div`
@@ -205,12 +207,7 @@ const Image = styled.img`
   height: auto;
 `;
 
-
-
-
 const Home = () => {
-
-
   const settings = {
     dots: false,
     infinite: true,
@@ -225,24 +222,22 @@ const Home = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const logos = [
-    { src: centauroLogo, alt: 'Centauro' },
-    { src: MagaluLogoNegative, alt: 'Magalu' },
-    { src: NanicaLogoNegatice, alt: 'Nanica' },
+    { src: centauroLogo, alt: "Centauro" },
+    { src: MagaluLogoNegative, alt: "Magalu" },
+    { src: NanicaLogoNegatice, alt: "Nanica" },
   ];
-
-
 
   return (
     <>
@@ -269,25 +264,44 @@ const Home = () => {
         subtitle="Frutas selecionadas que promovem saúde, bem-estar e produtividade no ambiente corporativo."
         buttonText="Conheça nossos clientes"
       />
-      <div style={{ position: 'relative' }}>
+      <div style={{ position: "relative" }}>
         <Estatistics>
           <Numbers>
-           <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
-              <Leaf  style={{height: '50px', width: '50px'}} />
-              <p>Aumente o bem-estar e
-                melhore a produtividade
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "2rem",
+                alignItems: "center",
+              }}
+            >
+              <Leaf style={{ height: "50px", width: "50px" }} />
+              <p>Aumente o bem-estar e melhore a produtividade</p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "2rem",
+                alignItems: "center",
+              }}
+            >
+              <Clock style={{ height: "50px", width: "50px" }} />
+              <p>
+                Economize tempo e ofereça mais saúde no seu ambiente de trabalho
               </p>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
-              <Clock  style={{height: '50px', width: '50px'}} />
-              <p>Economize tempo e ofereça
-                mais saúde no seu ambiente de trabalho
-              </p>
-            </div>
-             <div style={{ display: 'flex', flexDirection: 'row' , gap: '2rem', alignItems: 'center' }}>
-              <ChartArea style={{height: '50px', width: '50px'}} />
-              <p>Reduza custos operacionais
-                com um serviço prático e eficiente
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "2rem",
+                alignItems: "center",
+              }}
+            >
+              <ChartArea style={{ height: "50px", width: "50px" }} />
+              <p>
+                Reduza custos operacionais com um serviço prático e eficiente
               </p>
             </div>
           </Numbers>
@@ -322,8 +336,8 @@ const Home = () => {
         <TextContainer>
           <Title>Clientes que escolhem a Raafer</Title>
           <HighlightText>
-            Mais de 540 clientes, 100 grandes corporações que levam saúde e qualidade de vida
-            para os seus colaboradores
+            Mais de 540 clientes, 100 grandes corporações que levam saúde e
+            qualidade de vida para os seus colaboradores
           </HighlightText>
 
           {/* <CarouselWrapper>
@@ -343,6 +357,6 @@ const Home = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default Home;

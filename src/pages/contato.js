@@ -122,7 +122,7 @@ const ContactBox = styled.div`
   height: 122px;
   flex-shrink: 0;
   background: #fff;
-  border-radius: 15px 0px;
+  border-radius: 6px;
   box-shadow: 8px 8px 22.7px 0px rgba(0, 0, 0, 0.25);
   line-height: 35px;
 
