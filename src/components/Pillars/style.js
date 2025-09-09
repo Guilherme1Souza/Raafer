@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import Mercado from '../../images/mercado.png';
+import styled from "styled-components";
+import Mercado from "../../images/mercado.png";
 
 export const WePillarsContent = styled.div`
   position: relative;
-  background: url(${Mercado}) no-repeat center fixed;
-  background-size: 100% auto;
+  background: url(${Mercado}) no-repeat center;
+  background-size: cover;
   height: auto;
   display: flex;
   align-items: center;
@@ -14,10 +14,11 @@ export const WePillarsContent = styled.div`
   padding: 2rem;
   min-height: 60vh;
   z-index: 1;
-  margin-bottom: 8.0rem;
+  margin-bottom: 8rem;
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-    margin-bottom: 1.0rem;
+    margin-bottom: 1rem;
+    padding: 4rem;
   }
 `;
 
@@ -32,7 +33,7 @@ export const PillarsTitle = styled.h2`
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background-color: ${({ theme }) => theme.COLORS.WHITE};
@@ -41,33 +42,31 @@ export const PillarsTitle = styled.h2`
   }
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-      max-width: 650px;
-      font-size: 3.8rem;
-      padding-inline: 1rem;
+    max-width: 650px;
+    font-size: 3.8rem;
+    padding-inline: 1rem;
   }
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-      max-width: 375px;
-     
-    }
+    max-width: 375px;
+  }
 `;
 
-export const Pillars = styled.div`
-`
+export const Pillars = styled.div``;
 
 export const PillarsContent = styled.div`
   position: relative;
-  z-index: 2; 
+  z-index: 2;
   width: 60%;
 
   p {
-  margin-top: 2.2rem;
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    margin-top: 2.2rem;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    @media (max-width: ${({ theme }) => theme.bp.mobile}) {
       max-width: 480px;
       font-size: 1.7rem;
     }
