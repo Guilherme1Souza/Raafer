@@ -86,6 +86,11 @@ export const Trigger = styled(Accordion.Trigger)`
     transform: rotate(180deg);
     color: #a6d48f;
   }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    font-size: 1.8rem;
+    padding: 1.5rem 1.8rem;
+  }
 `;
 
 export const Content = styled(Accordion.Content)`
@@ -103,6 +108,11 @@ export const Content = styled(Accordion.Content)`
 
   &[data-state="closed"] {
     animation: ${slideUp} 200ms ease forwards;
+  }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    font-size: 2rem;
+    padding: 0.5rem 0.2rem;
   }
 `;
 

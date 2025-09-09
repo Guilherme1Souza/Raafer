@@ -74,6 +74,28 @@ const Select = styled.select`
   border-radius: 4px;
   border: 1px solid #ccc;
   margin-block: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+
+  /* Remove o estilo nativo do browser */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Espaço para a setinha */
+  padding-right: 32px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+
+  &:focus {
+    border-color: ${({ theme }) => theme.COLORS.GREEN};
+    box-shadow: 0 0 0 2px rgba(53, 74, 33, 0.2);
+  }
 `;
 
 const Check = styled.div`
