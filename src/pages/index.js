@@ -326,7 +326,7 @@ const Home = () => {
             para os seus colaboradores
           </HighlightText>
 
-          <CarouselWrapper>
+          {/* <CarouselWrapper>
             <Slider {...settings}>
               {logos.map((logo, index) => (
                 <div key={index}>
@@ -334,7 +334,7 @@ const Home = () => {
                 </div>
               ))}
             </Slider>
-          </CarouselWrapper>
+          </CarouselWrapper> */}
         </TextContainer>
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>

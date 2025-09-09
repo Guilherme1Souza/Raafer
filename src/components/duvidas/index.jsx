@@ -1,5 +1,5 @@
 // src/components/Duvidas/index.jsx
-import React from 'react';
+import React from "react";
 import {
   Container,
   Title,
@@ -9,25 +9,23 @@ import {
   Trigger,
   Content,
   ChevronIcon,
-} from './style';
-import { questions } from './questions';
+} from "./style";
+import { questions } from "./questions";
 
 const Duvidas = () => (
   <Container>
     <Title>Dúvidas Frequentes</Title>
     <StyledAccordion type="single" collapsible>
-      {questions.map((question) => (
-        <Item value={question} key={question}>
+      {questions.map((q, index) => (
+        <Item value={q.question} key={index}>
           <Header>
             <Trigger>
-              {question}
+              {q.question}
               <ChevronIcon />
             </Trigger>
           </Header>
           <Content>
-            <div style={{ padding: '15px 0' }}>
-              Aqui vai a resposta para: "{question}"
-            </div>
+            {q.answer && <div style={{ padding: "15px 25px" }}>{q.answer}</div>}
           </Content>
         </Item>
       ))}
