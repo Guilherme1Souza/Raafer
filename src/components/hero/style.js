@@ -1,5 +1,6 @@
 import styled, { keyframes, css } from "styled-components";
 import imgCasal from "../../images/casal.png";
+import { Link } from "gatsby";
 
 const slideInLeft = keyframes`
   from {
@@ -253,4 +254,8 @@ export const Button = styled.button`
     width: 203px;
     margin-top: 0;
   }
+`;
+
+export const buttonLink = styled.button`
+  text-decoration: none;
 `;

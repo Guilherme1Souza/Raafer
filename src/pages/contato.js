@@ -256,11 +256,11 @@ const Contato = () => {
           content="Fale com a Raafer! Tire suas dúvidas, envie sugestões e descubra como podemos ajudar você com nossos produtos naturais e frescos."
         />
         <meta name="author" content="Raphael Pires e Fernanda Pires" />
-        <meta property="og:url" content="https://www.seusite.com.br/contato" />
+        <meta property="og:url" content="https://www.raafer.com.br/contato" />
       </Helmet>
       <HeroComponent
-        title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."
-        subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
+        title="Quer falar com a gente?"
+        subtitle="Envie sua dúvida, sugestão ou feedback. Sua mensagem é muito importante para nós."
         buttonText="Conheça nossos clientes"
       />
       <Form>

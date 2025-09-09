@@ -262,7 +262,8 @@ const Home = () => {
       <HeroComponent
         title="Do campo para sua empresa"
         subtitle="Frutas selecionadas que promovem saúde, bem-estar e produtividade no ambiente corporativo."
-        buttonText="Conheça nossos clientes"
+        buttonText="Conheça sobre nós"
+        buttonLink="/sobre/"
       />
       <div style={{ position: "relative" }}>
         <Estatistics>
