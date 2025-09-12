@@ -11,6 +11,8 @@ import Checkbox from "@mui/material/Checkbox";
 import Duvidas from "../components/duvidas";
 import { Footer } from "../components/footer";
 
+import Favicon from "../../favicon.ico";
+
 const Form = styled.div`
   display: flex;
   flex-direction: row;
@@ -269,6 +271,7 @@ const Contato = () => {
           name="description"
           content="Entre em contato com a Raafer. Estamos prontos para atender você com produtos frescos e sustentáveis. Tire suas dúvidas e fale conosco!"
         />
+        <link rel="icon" href={Favicon} />
         <meta
           name="keywords"
           content="contato Raafer, fale conosco, atendimento, produtos frescos, suporte Raafer"

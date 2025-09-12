@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Favicon from "../../favicon.ico";
+
 import { Helmet } from "react-helmet";
 import { HeroComponent } from "../components/hero";
 import styled from "styled-components";
@@ -319,21 +321,32 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Inicio | Raafer</title>
+        <title>Raafer | Inicio</title>
+
+        <link rel="icon" href={Favicon} />
+
         <meta
           name="description"
-          content="Bem-vindo à Raafer! Conheça nossa linha de alimentos frescos, naturais e sustentáveis, direto do produtor para sua casa. Qualidade e saúde em cada escolha."
+          content="Bem-vindo à Raafer! Alimentos frescos, naturais e sustentáveis, direto do produtor para sua casa. Saúde e qualidade em cada escolha."
         />
-        <meta
-          property="og:title"
-          content="Raafer | Sua Fonte de Alimentos Naturais e Frescos"
-        />
+
+        {/* Open Graph para redes sociais */}
+        <meta property="og:title" content="Raafer | Inicio" />
         <meta
           property="og:description"
           content="Descubra como a Raafer transforma a alimentação com produtos naturais, frescos e de origem sustentável. Experimente saúde e sabor em cada detalhe."
         />
-        <meta name="author" content="Raafer" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.raafer.com.br/" />
+        <meta
+          property="og:image"
+          content="https://www.raafer.com.br/og-image.jpg"
+        />
+
+        {/* SEO extra */}
+        <meta name="author" content="Raafer" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.raafer.com.br/" />
       </Helmet>
 
       <HeroComponent

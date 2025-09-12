@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 
 import Raafer from "../images/raafer.jpg";
 
+import Favicon from "../../favicon.ico";
+
 import { HeroComponent } from "../components/hero";
 import { CardsSection } from "../components/Card";
 import { Testimonials } from "../components/testimonials";
@@ -166,6 +168,7 @@ const Sobre = () => {
           name="description"
           content="Saiba mais sobre a história da Raafer e o nosso compromisso com produtos frescos."
         />
+        <link rel="icon" href={Favicon} />
         <meta property="og:title" content="Quem Somos | Raafer" />
         <meta
           property="og:description"
