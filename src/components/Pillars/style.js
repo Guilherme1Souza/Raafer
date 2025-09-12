@@ -14,12 +14,12 @@ export const WePillarsContent = styled.div`
   padding: 2rem;
   min-height: 60vh;
   z-index: 1;
-  margin-bottom: 8rem;
+ 
+
 
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     padding: 4rem;
-  }
 `;
 
 export const PillarsTitle = styled.h2`

@@ -14,14 +14,15 @@ export const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4.6rem; 
-  padding: 4rem; 
+  gap: 4.6rem;
+  padding: 4rem;
   padding-bottom: 12rem;
   overflow: hidden;
-
+  background-color: ${({ theme }) => theme.COLORS.BROWN};
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     flex-direction: column;
+    margin-top: -12rem;
   }
 `;
 
@@ -43,6 +44,7 @@ export const PillarsCard = styled.div`
   opacity: 0;
   transform: translateX(-60px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-top: 6rem;
 
   ${({ isVisible, delay }) =>
     isVisible &&
