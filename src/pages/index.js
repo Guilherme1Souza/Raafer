@@ -25,6 +25,7 @@ import { Testimonials } from "../components/testimonials";
 import { Footer } from "../components/footer";
 import { LineBottom } from "../components/line";
 import { Apresentacao } from "../components/apresentação";
+import { Link } from "gatsby";
 
 const Numbers = styled.div`
   position: absolute;
@@ -164,12 +165,88 @@ const Clientes = styled.div`
   padding: 18.8rem 10.9rem 0;
   flex-wrap: wrap;
 
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    padding: 8rem 4rem 0;
+    gap: 2rem;
+  }
+
   @media (max-width: ${({ theme }) => theme.bp.mobile}) {
     padding: 6rem 2rem 0;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 `;
 
+const Orcamento = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+  margin-left: 10.9rem;
+  gap: 2rem;
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    margin-left: 4rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+const ButtonTwo = styled.button`
+  position: relative;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0rem 0rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: -3rem;
+  background: transparent;
+
+  &:hover {
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    width: 0;
+    height: 2px;
+    background-color: ${({ theme }) => theme.COLORS.GREEN};
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-inline: auto;
+  }
+`;
 const TextContainer = styled.div`
   max-width: 500px;
 
@@ -353,6 +430,11 @@ const Home = () => {
         </TextContainer>
         <Image src={MenFazendeiro} alt="Homem segurando bananas" />
       </Clientes>
+      <Orcamento>
+        <Link to="/contato/">
+          <ButtonTwo>Solicitar Orçamento</ButtonTwo>
+        </Link>
+      </Orcamento>
       <Testimonials />
       <Apresentacao />
       <Footer />
