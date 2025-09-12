@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
-import imgCasal from "../../images/casal.png";
+import imgFruta from "../../images/fruta.png";
 import { Link } from "gatsby";
 
 const slideInLeft = keyframes`
@@ -169,8 +169,8 @@ export const Subtext = styled.div`
 `;
 
 export const Background = styled.div`
-  background: url(${imgCasal}) center/cover no-repeat;
-  width: 400px;
+  background: url(${imgFruta}) center/cover no-repeat;
+  width: 100%;
   height: 400px;
   margin-left: 300px;
   margin-top: 105px;

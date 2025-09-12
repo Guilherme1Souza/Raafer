@@ -185,7 +185,7 @@ const Orcamento = styled.div`
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  margin-top: -5rem;
+  margin-top: -4rem;
   margin-bottom: 3rem;
   margin-left: 10.9rem;
   gap: 2rem;
@@ -270,14 +270,6 @@ const HighlightText = styled.p`
   color: #b88e2f;
   font-weight: 600;
   line-height: 1.6;
-`;
-
-const CarouselWrapper = styled.div`
-  margin: 24px 0;
-`;
-
-const Logo = styled.img`
-  height: 32px;
 `;
 
 const Image = styled.img`
