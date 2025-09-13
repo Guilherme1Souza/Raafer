@@ -1,0 +1,13 @@
+FROM node:20-alpine
+WORKDIR /app
+
+# Copia package.json e package-lock.json da raiz do projeto
+COPY package*.json ./
+
+RUN npm install --omit=dev
+
+# Copia o server.js do collector
+COPY observabilidade/collector/server.js ./
+
+EXPOSE 4000
+CMD ["node", "server.js"]

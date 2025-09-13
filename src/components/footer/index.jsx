@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import {
   FooterContainer,
   ContentGrid,
@@ -17,7 +17,16 @@ import { Mail, Phone, Instagram } from "lucide-react";
 import imgLogo from "../../images/logo.svg";
 import { Link } from "gatsby";
 
+import { track } from "../../utils/metrics";
+
 export function Footer() {
+  React.useEffect(() => {
+    track("page_view");
+  }, []);
+
+  const handleCta = () => {
+    track("orcamento_click", { button_id: "hero_cta" });
+  };
   return (
     <>
       <FooterContainer>
@@ -51,7 +60,7 @@ export function Footer() {
               <Phone size={16} /> (11) 98751-4466
             </ContactItem>
             <Link to="/contato">
-              <Button>Faça um orçamento</Button>
+              <Button onClick={handleCta}>Faça um orçamento</Button>
             </Link>
           </Column>{" "}
           {/* <Column>

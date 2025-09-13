@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    container_name: prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=15d
+    ports:
+      - "9090:9090"
+    depends_on:
+      - collector
+
+  grafana:
+    image: grafana/grafana-oss:11.1.0
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+
+  collector:
+    build:
+      context: .. # 👈 raiz do projeto (onde está package.json)
+      dockerfile: observabilidade/collector/dockerfile
+    container_name: metrics-collector
+    environment:
+      - PORT=4000
+      - CORS_ORIGIN=http://localhost:8000
+    ports:
+      - "4000:4000"
+
+volumes:
+  grafana-data:

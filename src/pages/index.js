@@ -1,7 +1,9 @@
-import React from "react";
+import * as React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import { track } from "../utils/metrics";
 
 import Favicon from "../../favicon.ico";
 
@@ -310,6 +312,14 @@ const Home = () => {
     { src: NanicaLogoNegatice, alt: "Nanica" },
   ];
 
+  React.useEffect(() => {
+    track("page_view");
+  }, []);
+
+  const handleCta = () => {
+    track("orcamento_click", { button_id: "hero_cta" });
+  };
+
   return (
     <>
       <Helmet>
@@ -499,7 +509,7 @@ const Home = () => {
       </Clientes>
       <Orcamento>
         <Link to="/contato/">
-          <ButtonTwo>Solicitar Orçamento</ButtonTwo>
+          <ButtonTwo onClick={handleCta}>Solicitar Orçamento</ButtonTwo>
         </Link>
       </Orcamento>
       <Testimonials />
