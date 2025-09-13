@@ -313,7 +313,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Raafer | Inicio</title>
+        <title>Raafer</title>
 
         <link rel="icon" href={Favicon} />
 
@@ -323,7 +323,7 @@ const Home = () => {
         />
 
         {/* Open Graph para redes sociais */}
-        <meta property="og:title" content="Raafer | Inicio" />
+        <meta property="og:title" content="Raafer" />
         <meta
           property="og:description"
           content="Descubra como a Raafer transforma a alimentação com produtos naturais, frescos e de origem sustentável. Experimente saúde e sabor em cada detalhe."
@@ -332,13 +332,75 @@ const Home = () => {
         <meta property="og:url" content="https://www.raafer.com.br/" />
         <meta
           property="og:image"
-          content="https://www.raafer.com.br/og-image.jpg"
+          content="https://www.raafer.com.br/logo.png"
         />
 
         {/* SEO extra */}
         <meta name="author" content="Raafer" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.raafer.com.br/" />
+
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Raafer",
+      "url": "https://www.raafer.com.br",
+      "logo": "https://www.raafer.com.br/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/sua-pagina",
+        "https://www.instagram.com/sua-pagina",
+        "https://www.linkedin.com/company/sua-pagina"
+      ]
+    }
+    `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.raafer.com.br",
+      "name": "Raafer",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.raafer.com.br/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.raafer.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sobre",
+          "item": "https://www.raafer.com.br/sobre/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contato",
+          "item": "https://www.raafer.com.br/contato/"
+        }
+      ]
+    }
+    `}
+        </script>
       </Helmet>
 
       <HeroComponent
