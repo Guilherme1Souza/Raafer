@@ -115,10 +115,19 @@ export const Button = styled.button`
 `;
 
 export const CopyRight = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   text-align: center;
   font-size: 1.3rem;
   color: #666;
   margin-top: 3rem;
   border-top: 1px solid #ccc;
   padding-top: 1.2rem;
+`;
+
+export const TextFooter = styled.p`
+  font-size: 1.3rem;
+  color: green;
 `;

@@ -11,6 +11,7 @@ import {
   SocialIcon,
   Button,
   CopyRight,
+  TextFooter,
 } from "./style";
 import { Mail, Phone, Instagram } from "lucide-react";
 import imgLogo from "../../images/logo.svg";
@@ -37,9 +38,6 @@ export function Footer() {
             <Link to="/contato">
               <LinkItem>Fale Conosco</LinkItem>
             </Link>
-            <Link to="/contato">
-              <LinkItem>Dúvidas Frequentes</LinkItem>
-            </Link>
           </Column>
           <Column>
             <Title>Contato</Title>
@@ -65,7 +63,12 @@ export function Footer() {
         </ContentGrid>
         <CopyRight>
           © 2025 Raafer - Todos os direitos reservados - Desenvolvido por
-          Guilherme Souza
+          <Link
+            to="https://www.linkedin.com/in/guilhermeeduardo/"
+            target="_blank"
+          >
+            <TextFooter>Guilherme Souza</TextFooter>
+          </Link>
         </CopyRight>
       </FooterContainer>
     </>

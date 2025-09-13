@@ -4,9 +4,7 @@ import { Download } from "lucide-react";
 
 export function Apresentacao() {
   const handleOpen = () => {
-    window.open(
-      "https://raw.githubusercontent.com/Guilherme1Souza/Raafer/main/apresentacao.pdf"
-    );
+    window.open("https://www.raafer.com.br/apresentacao.pdf", "_blank");
   };
 
   return (
