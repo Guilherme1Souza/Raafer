@@ -152,8 +152,8 @@ const ContactWrapper = styled.div`
 const ContactSection = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1100px;
+  gap: 10rem;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   top: 12rem; /* puxa pra cima em relação ao fluxo */
