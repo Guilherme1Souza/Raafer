@@ -4,6 +4,9 @@ import { Helmet } from "react-helmet";
 
 import Raafer from "../images/raafer.jpg";
 
+import frutas1 from "../images/corp1.png";
+import frutas2 from "../images/corp2.png";
+
 import Favicon from "../../favicon.ico";
 
 import { HeroComponent } from "../components/hero";
@@ -141,6 +144,70 @@ const AboutText = styled.div`
   }
 `;
 
+const ContactWrapper = styled.div`
+  position: relative;
+  z-index: 10;
+`;
+
+const ContactSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  top: 12rem; /* puxa pra cima em relação ao fluxo */
+  z-index: 10;
+
+  @media (max-width: ${({ theme }) => theme.bp.tablet}) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-inline: 1rem;
+    top: -6rem;
+  }
+`;
+
+const ContactCard = styled.div`
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  color: white;
+  font-size: 3.2rem;
+  font-style: bold;
+  font-weight: 600;
+  background: ${({ bg }) => `url(${bg}) center/cover no-repeat`};
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+  @media (max-width: ${({ theme }) => theme.bp.mobile}) {
+    height: 200px;
+    font-size: 2.2rem;
+  }
+`;
+
+const ContactButton = styled.a`
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: white;
+    color: #000;
+  }
+`;
+
 const Sobre = () => {
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
@@ -208,6 +275,31 @@ const Sobre = () => {
           </AboutText>
         </AboutBox>
       </About>
+      <ContactWrapper>
+        <ContactSection>
+          <ContactCard bg={frutas1}>
+            <div>
+              Gostaria de um orçamento para sua empresa?
+              <br />
+              <ContactButton href="/contato">Solicite Agora</ContactButton>
+            </div>
+          </ContactCard>
+
+          <ContactCard bg={frutas2}>
+            <div>
+              Fale conosco via WhatsApp agora mesmo!
+              <br />
+              <ContactButton
+                href="https://wa.me/5599999999999?text=Olá,+gostaria+de+um+orçamento"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fale Conosco
+              </ContactButton>
+            </div>
+          </ContactCard>
+        </ContactSection>
+      </ContactWrapper>
       <Pillars subtitle="NOSSOS PILARES" />
       <CardsSection />
       <Footer />
