@@ -20,6 +20,7 @@ import chale from "../../images/chale.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { LineBottom } from "../line";
 
 const imageMap = {
   nanica: nanicaLogo,
@@ -59,6 +60,7 @@ const sliderSettings = {
 export function Testimonials() {
   return (
     <Container>
+      <LineBottom />
       <Title>Compromisso com qualidade e frescor que você sente no sabor</Title>
       <Slider {...sliderSettings}>
         {testimonialsData.map((item, index) => (

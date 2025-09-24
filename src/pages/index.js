@@ -166,7 +166,7 @@ const Clientes = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18.8rem 10.9rem 0;
+  padding-left: 10.9rem;
   flex-wrap: wrap;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
@@ -275,9 +275,9 @@ const HighlightText = styled.p`
 `;
 
 const Image = styled.img`
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
-  height: auto;
+  height: 600px;
 `;
 
 const Home = () => {
@@ -486,7 +486,7 @@ const Home = () => {
           </ProcessContent>
         </ProcessLoading>
       </Process>
-      <LineBottom />
+      {/* <LineBottom /> */}
       <Clientes>
         <TextContainer>
           <Title>Clientes que escolhem a Raafer</Title>
@@ -505,7 +505,8 @@ const Home = () => {
             </Slider>
           </CarouselWrapper> */}
         </TextContainer>
-        <Image src={MenFazendeiro} alt="Homem segurando bananas" />
+
+        <Image src={MenFazendeiro} alt="Mulher segurando o potinho da Raafer" />
       </Clientes>
       <Orcamento>
         <Link to="/contato/">

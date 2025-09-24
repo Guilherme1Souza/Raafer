@@ -210,7 +210,6 @@ const Sobre = () => {
       </About>
       <Pillars subtitle="NOSSOS PILARES" />
       <CardsSection />
-      <Testimonials />
       <Footer />
     </>
   );
