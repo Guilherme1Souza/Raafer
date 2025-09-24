@@ -12,7 +12,7 @@ export const WePillarsContent = styled.div`
   color: ${({ theme }) => theme.COLORS.WHITE};
   text-align: center;
   padding: 2rem;
-  min-height: 60vh;
+  min-height: 65vh;
   z-index: 1;
  
 
