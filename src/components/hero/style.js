@@ -20,7 +20,7 @@ export const Container = styled.div`
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
-  height: 65.6rem;
+  height: 67.6rem;
   padding-inline: 10.9rem;
 
   @media (min-width: ${({ theme }) => theme.bp.hugeDesktop}) {
