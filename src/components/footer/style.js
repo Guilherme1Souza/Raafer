@@ -37,8 +37,8 @@ export const Column = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
 `;
 
 export const Description = styled.p`
