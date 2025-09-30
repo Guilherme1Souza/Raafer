@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import imgLogo from "../../images/logo.svg";
+import imgLogo from "../../images/raafer.jpg";
 import closeIcon from "../../assets/closeIcon.svg";
 import hamburguer from "../../assets/hamburguer.svg";
 

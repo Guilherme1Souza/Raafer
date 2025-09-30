@@ -36,7 +36,13 @@ export const NavContainer = styled.nav`
   }
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+`;
 
 export const NavLinks = styled.ul`
   display: flex;

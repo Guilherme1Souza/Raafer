@@ -14,7 +14,7 @@ import {
   TextFooter,
 } from "./style";
 import { Mail, Phone, Instagram } from "lucide-react";
-import imgLogo from "../../images/logo.svg";
+import imgLogo from "../../images/raafer.jpg";
 import { Link } from "gatsby";
 
 import { track } from "../../utils/metrics";
