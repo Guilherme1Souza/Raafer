@@ -30,6 +30,7 @@ import { Footer } from "../components/footer";
 import { LineBottom } from "../components/line";
 import { Apresentacao } from "../components/apresentação";
 import { Link } from "gatsby";
+import { ButtonWppComponent } from "../components/buttonWpp";
 
 const Numbers = styled.div`
   position: absolute;
@@ -515,6 +516,7 @@ const Home = () => {
       </Orcamento>
       <Testimonials />
       <Apresentacao />
+      <ButtonWppComponent />
       <Footer />
     </>
   );

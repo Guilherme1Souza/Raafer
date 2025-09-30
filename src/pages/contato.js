@@ -12,6 +12,7 @@ import Duvidas from "../components/duvidas";
 import { Footer } from "../components/footer";
 
 import Favicon from "../../favicon.ico";
+import { ButtonWppComponent } from "../components/buttonWpp";
 
 const Form = styled.div`
   display: flex;
@@ -341,10 +342,10 @@ const Contato = () => {
             <option value="" hidden>
               Número de colaboradores?
             </option>
-            <option value="1-20">1-20</option>
-            <option value="20-50">20-50</option>
-            <option value="50-200">50-200</option>
-            <option value="200-500">200-500</option>
+            <option value="15-30">15-30</option>
+            <option value="31-50">31-50</option>
+            <option value="51-200">51-200</option>
+            <option value="201-500">201-500</option>
             <option value="500+">500+</option>
           </Select>
           <Select
@@ -406,6 +407,7 @@ const Contato = () => {
         </SideBox>
       </Form>
       <Duvidas />
+      <ButtonWppComponent />
       <Footer />
     </>
   );

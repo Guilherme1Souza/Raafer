@@ -20,7 +20,7 @@ export const Container = styled.div`
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
-  height: 63.3rem;
+  height: 65.6rem;
   padding-inline: 10.9rem;
 
   @media (min-width: ${({ theme }) => theme.bp.hugeDesktop}) {
@@ -91,9 +91,9 @@ export const Text = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: clamp(2.8rem, 2vw + 1.6rem, 3.6rem);
+    font-size: clamp(2.2rem, 2vw + 1.2rem, 3rem);
     line-height: 36px;
-    max-width: 800px;
+    max-width: 1400px;
     text-align: start;
   }
 
@@ -135,7 +135,7 @@ export const Text = styled.div`
 `;
 
 export const Subtext = styled.div`
-  font-size: clamp(1.6rem, 1.2vw + 0.8rem, 2.6rem);
+  font-size: clamp(1.6rem, 1.2vw + 0.8rem, 2.2rem);
   font-weight: 400;
   line-height: 1.5;
   max-width: 750px;

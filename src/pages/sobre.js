@@ -14,6 +14,7 @@ import { CardsSection } from "../components/Card";
 import { Testimonials } from "../components/testimonials";
 import { Footer } from "../components/footer";
 import { Pillars } from "../components/Pillars";
+import { ButtonWppComponent } from "../components/buttonWpp";
 
 const slideInLeft = keyframes`
   from {
@@ -245,7 +246,7 @@ const Sobre = () => {
         <meta property="og:url" content="https://www.raafer.com.br/sobre" />
       </Helmet>
       <HeroComponent
-        title="Do campo para a sua mesa, com qualidade e frescor incomparáveis."
+        title="Do campo para sua empresa, frutas selecionadas que promovem saúde, bem-estar e produtividade no ambiente corporativo."
         subtitle="Uma vida mais saudável começa com escolhas inteligentes. Aposte em produtos frescos, ricos em nutrientes e sem conservantes para garantir bem-estar e vitalidade todos os dias."
         buttonText="Solicite um orçamento"
         buttonLink="/contato/"
@@ -302,6 +303,7 @@ const Sobre = () => {
       </ContactWrapper>
       <Pillars subtitle="NOSSOS PILARES" />
       <CardsSection />
+      <ButtonWppComponent />
       <Footer />
     </>
   );
