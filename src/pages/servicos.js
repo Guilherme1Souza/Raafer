@@ -68,7 +68,6 @@ const CarouselItem = styled.div`
   flex: 0 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
 
   img {
     width: 350px;
@@ -116,7 +115,7 @@ const CtaBox = styled.div`
 const Section = styled.section`
   padding: 80px 20px;
   text-align: center;
-  background: ${({ bg }) => bg || "white"};
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
 `;
 
 const Title = styled.h1`
@@ -226,7 +225,7 @@ const Servicos = () => {
       />
 
       {/* Carrosséis */}
-      <Section bg="#f7f7f7">
+      <Section>
         <Title>
           Galeria <span>Alguns de nossos serviços</span>
         </Title>
