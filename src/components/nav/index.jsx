@@ -55,7 +55,7 @@ export function Nav() {
           <NavLi to="/contato">
             <StyledLink>Contato</StyledLink>
           </NavLi>
-          <NavLi to="/">
+          <NavLi to="/contato">
             <Links>Demonstração</Links>
           </NavLi>
         </NavLinks>
