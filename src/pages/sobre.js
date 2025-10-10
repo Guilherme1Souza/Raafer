@@ -28,7 +28,8 @@ const slideInLeft = keyframes`
 `;
 
 const About = styled.div`
-  padding-block: 80px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   opacity: 0;
   transform: translateX(-60px);
   visibility: hidden;
@@ -257,11 +258,7 @@ const Sobre = () => {
         </h1>
         <AboutBox>
           <AboutImg />
-          <Position>
-            Raphael Pires e Fernanda Pires
-            <p>CEOs e Fundadores</p>
-            Raafer
-          </Position>
+          <Position>Raafer</Position>
           <AboutText>
             "O Raafer atua há mais de quatro anos no mercado, oferecendo
             soluções em alimentação sustentável para empresas, seus

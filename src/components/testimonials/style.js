@@ -24,17 +24,18 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   color: ${({ theme }) => theme.COLORS.WHITE};
-  font-size: 3rem; 
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
   line-height: 3.8rem;
   width: 60.8rem;
   padding-top: 5.3rem;
   padding-bottom: 13.1rem;
+  padding-inline: 5.5rem;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     width: 100%;
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
     text-align: center;
     padding-bottom: 4rem;
   }
@@ -49,16 +50,16 @@ export const Cards = styled.div`
 `;
 
 export const Card = styled.div`
- background-color: ${({ theme }) => theme.COLORS.WHITE};
-  border-radius: 1.5rem 0rem; 
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  border-radius: 1.5rem 0rem;
   padding: 2rem;
   height: 48.8rem;
-  max-width: 40rem; 
+  max-width: 40rem;
   text-align: center;
   margin: 0 auto;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
-    height: 43rem; 
+    height: 43rem;
     padding: 1.5rem;
   }
 `;
@@ -67,12 +68,12 @@ export const Avatar = styled.img`
   margin: 0 auto;
   border-radius: 50%;
   width: 16.1rem;
-  height: 14.3rem; 
+  height: 14.3rem;
   margin-bottom: 1rem;
 
   @media (max-width: ${({ theme }) => theme.bp.tablet}) {
     width: 12rem;
-    height: 11rem; 
+    height: 11rem;
   }
 `;
 

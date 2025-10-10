@@ -47,6 +47,12 @@ export function Footer() {
             <Link to="/contato">
               <LinkItem>Fale Conosco</LinkItem>
             </Link>
+            <Link to="/servicos">
+              <LinkItem>Serviços</LinkItem>
+            </Link>
+            <Link to="/contato">
+              <LinkItem>Contato</LinkItem>
+            </Link>
           </Column>
           <Column>
             <Title>Contato</Title>
@@ -63,12 +69,17 @@ export function Footer() {
               <Button onClick={handleCta}>Faça um orçamento</Button>
             </Link>
           </Column>{" "}
-          {/* <Column>
+          <Column>
             <Title>Siga-nos nas redes sociais:</Title>
             <SocialIcon>
-              <Instagram size={20} />
+              <Link
+                to="https://www.instagram.com/raafer_criandoraizes?igsh=MTVhc3BoNGtvY3k5Nw=="
+                target="_blank"
+              >
+                <Instagram size={20} />
+              </Link>
             </SocialIcon>
-          </Column> */}
+          </Column>
         </ContentGrid>
         <CopyRight>
           © 2025 Raafer - Todos os direitos reservados - Desenvolvido por

@@ -91,10 +91,6 @@ export const SocialIcon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   transition: transform 0.2s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `;
 
 export const Button = styled.button`

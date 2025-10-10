@@ -26,6 +26,7 @@ import servico15 from "../images/servico15.jpg";
 
 // Ícones fictícios
 import { FaAppleAlt, FaBuilding, FaLeaf } from "react-icons/fa";
+import { Testimonials } from "../components/testimonials";
 
 // animações
 const scrollLeft = keyframes`
@@ -78,6 +79,7 @@ const CarouselItem = styled.div`
 `;
 
 const CtaBox = styled.div`
+  padding-inline: 8rem;
   margin-top: 4rem;
   justify-content: start;
   text-align: center;
@@ -216,7 +218,6 @@ const Servicos = () => {
         <link rel="icon" href={Favicon} />
       </Helmet>
 
-      {/* Hero */}
       <HeroComponent
         title="Nossos Serviços"
         subtitle="Levamos saúde e frescor diretamente para empresas, famílias e eventos com soluções personalizadas."
@@ -254,16 +255,20 @@ const Servicos = () => {
           <a href="/contato">Solicitar Orçamento</a>
         </CtaBox>
       </Section>
-
+      <Testimonials />
       <Section>
         <Title>
           O que oferecemos <span>Soluções saudáveis e práticas</span>
         </Title>
         <TextBlock>
-          A Raafer transforma o consumo de frutas em uma experiência prática e
+          O Raafer transforma o consumo de frutas em uma experiência prática e
           acessível. Nossos serviços são voltados para empresas que buscam mais
           saúde e produtividade para seus colaboradores, além de famílias que
           desejam qualidade no dia a dia.
+        </TextBlock>
+        <TextBlock style={{ marginTop: "2rem" }}>
+          Com entregas regulares e cestas personalizadas, garantimos que frutas
+          frescas e saudáveis estejam sempre à disposição de nossos clientes.
         </TextBlock>
 
         <CardsWrapper>
