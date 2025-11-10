@@ -177,7 +177,7 @@ const ContactCard = styled.div`
   display: flex;
   align-items: flex-end;
   padding: 2rem;
-  color: white;
+  color: #000000ff;
   font-size: 3.2rem;
   font-style: bold;
   font-weight: 600;
@@ -254,7 +254,7 @@ const Sobre = () => {
       />
       <About ref={ref} isVisible={isVisible}>
         <h1>
-          DO RAAFER <span>PARA SUA FAMILIA</span>
+          DO RAAFER <span>PARA SUA EMPRESA</span>
         </h1>
         <AboutBox>
           <AboutImg />

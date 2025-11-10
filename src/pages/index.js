@@ -31,6 +31,7 @@ import { LineBottom } from "../components/line";
 import { Apresentacao } from "../components/apresentação";
 import { Link } from "gatsby";
 import { ButtonWppComponent } from "../components/buttonWpp";
+import { Galeria } from "../components/galeria";
 
 const Numbers = styled.div`
   position: absolute;
@@ -463,6 +464,7 @@ const Home = () => {
           </Numbers>
         </Estatistics>
       </div>
+      <Galeria />
       <Process>
         <h2>Nosso Processo</h2>
         <ProcessLoading>
@@ -487,6 +489,7 @@ const Home = () => {
           </ProcessContent>
         </ProcessLoading>
       </Process>
+
       {/* <LineBottom /> */}
       <Clientes>
         <TextContainer>
