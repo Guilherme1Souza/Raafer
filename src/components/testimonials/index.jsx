@@ -17,6 +17,7 @@ import magaluLogo from "../../images/magaluLogo.jpg";
 import imgVixtra from "../../images/vixtraLogo.png";
 import chale from "../../images/chale.png";
 import canaltech from "../../images/Canaltech_logo.png";
+import dsv from "../../images/dsvLogo.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,6 +30,7 @@ const imageMap = {
   vixtra: imgVixtra,
   chale: chale,
   canaltech: canaltech,
+  dsv: dsv,
 };
 
 const sliderSettings = {

@@ -28,5 +28,11 @@
     "testimonial": "Seu senso de responsabilidade e comprometimento com as rotinas e regras corporativas são notáveis. As entregas que realiza diariamente demonstram empenho, organização e foco em oferecer as melhores opções possíveis, o que gera uma ótima impressão entre os colegas.",
     "rating": 5,
     "image": "canaltech"
+  },
+  {
+    "company": "DSV",
+    "testimonial": "Gostaríamos de registrar que o pessoal tem gostado bastante das frutas enviadas. O retorno tem sido muito positivo — principalmente quando chegam os morangos, que fazem bastante sucesso entre os colaboradores. No geral, o serviço está ótimo, sem nenhuma reclamação. Parabéns pelo cuidado e pela qualidade constante nas entregas!",
+    "rating": 5,
+    "image": "dsv"
   }
 ]
