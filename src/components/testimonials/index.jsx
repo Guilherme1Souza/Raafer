@@ -18,6 +18,9 @@ import imgVixtra from "../../images/vixtraLogo.png";
 import chale from "../../images/chale.png";
 import canaltech from "../../images/Canaltech_logo.png";
 import dsv from "../../images/dsvLogo.png";
+import gelaboca from "../../images/gelabocaLogo.png";
+import panobianco from "../../images/panobiancoLogo.png";
+import dbLogo from "../../images/dbLogo.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,6 +34,9 @@ const imageMap = {
   chale: chale,
   canaltech: canaltech,
   dsv: dsv,
+  gelaboca: gelaboca,
+  panobianco: panobianco,
+  dbschenker: dbLogo,
 };
 
 const sliderSettings = {

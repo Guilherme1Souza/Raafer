@@ -34,5 +34,23 @@
     "testimonial": "Gostaríamos de registrar que o pessoal tem gostado bastante das frutas enviadas. O retorno tem sido muito positivo — principalmente quando chegam os morangos, que fazem bastante sucesso entre os colaboradores. No geral, o serviço está ótimo, sem nenhuma reclamação. Parabéns pelo cuidado e pela qualidade constante nas entregas!",
     "rating": 5,
     "image": "dsv"
+  },
+  {
+    "company": "DB Schenker",
+    "testimonial": "Gostaríamos de registrar que o pessoal tem gostado bastante das frutas enviadas. O retorno tem sido muito positivo — principalmente quando chegam os morangos, que fazem bastante sucesso entre os colaboradores. No geral, o serviço está ótimo, sem nenhuma reclamação. Parabéns pelo cuidado e pela qualidade constante nas entregas!",
+    "rating": 5,
+    "image": "dbschenker"
+  },
+  {
+    "company": "Gela Boca",
+    "testimonial": "A Gela Boca Guarulhos sempre teve uma ótima parceria com a Raafer. As frutas veem frescas, bem selecionadas e as entregas sempre certinhas. Atendimento bom demais e de confiança. Serviço que a gente recomenda sem pensar duas vezes!",
+    "rating": 5,
+    "image": "gelaboca"
+  },
+  {
+    "company": "Panobianco Academia",
+    "testimonial": "Gostaríamos de agradecer pelas frutas enviadas no dia. As bananas estavam lindíssimas e todas as frutas chegaram com uma qualidade impecável. A entrega foi muito bem-feita e todo o nosso time gostou bastante. Parabéns pelo cuidado e pelo padrão diferenciado — seguimos contando com a parceria do Raafer.",
+    "rating": 5,
+    "image": "panobianco"
   }
 ]
